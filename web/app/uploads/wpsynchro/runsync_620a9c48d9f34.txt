@@ -1,0 +1,150 @@
+[2022-02-14 18:15:37.263648] [INFO] Running sync controller loop - With allotted time: 26.740746021271 seconds
+[2022-02-14 18:15:37.267225] [INFO] Initating with remote and local host with remaining time:26.737170934677
+[2022-02-14 18:15:37.277289] [DEBUG] Calling initate remote service with url: http://bluetractor.test
+[2022-02-14 18:15:37.523607] [DEBUG] Got initiate token: ef1cf39c4897875d52894ac98b54f35f307525a38d09126134258937aa23d9b9
+[2022-02-14 18:15:37.523822] [DEBUG] Calling initate remote service with url: https://bluetractor.stealthmedia.com
+[2022-02-14 18:15:37.868641] [ERROR] The site bluetractor.stealthmedia.com is protected by Basic Authentication, which requires a username and password.
+                    If this is the remote site, the username/password should be added to the synchronization configuration.
+                    If the site is the 'local' site, you can add the username/password in the 'Setup' menu.
+[2022-02-14 18:15:37.869294] [ERROR] Could not connect to bluetractor.stealthmedia.com REST service (HTTP statuscode: 401)
+[2022-02-14 18:15:37.869513] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/initiate/?type=pull
+[2022-02-14 18:15:37.869674] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Mon, 14 Feb 2022 18:15:35 GMT
+                    [content-type] =&gt; text/html
+                    [content-length] =&gt; 65
+                    [www-authenticate] =&gt; Basic realm=&quot;Password protected&quot;
+                    [etag] =&gt; &quot;61e91823-41&quot;
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; 401 - Unauthorised | Access to this page requires authorisation.
+
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; 401 - Unauthorised | Access to this page requires authorisation.
+
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Mon, 14 Feb 2022 18:15:35 GMT
+Content-Type: text/html
+Content-Length: 65
+Connection: close
+WWW-Authenticate: Basic realm=&quot;Password protected&quot;
+ETag: &quot;61e91823-41&quot;
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+401 - Unauthorised | Access to this page requires authorisation.
+
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Mon, 14 Feb 2022 18:15:35 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; text/html
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 65
+                                        )
+
+                                    [www-authenticate] =&gt; Array
+                                        (
+                                            [0] =&gt; Basic realm=&quot;Password protected&quot;
+                                        )
+
+                                    [etag] =&gt; Array
+                                        (
+                                            [0] =&gt; &quot;61e91823-41&quot;
+                                        )
+
+                                    [host-header] =&gt; Array
+                                        (
+                                            [0] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                                        )
+
+                                    [x-proxy-cache-info] =&gt; Array
+                                        (
+                                            [0] =&gt; DT:1
+                                        )
+
+                                )
+
+                        )
+
+                    [status_code] =&gt; 401
+                    [protocol_version] =&gt; 1.1
+                    [success] =&gt; 
+                    [redirects] =&gt; 0
+                    [url] =&gt; https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/initiate/?type=pull
+                    [history] =&gt; Array
+                        (
+                        )
+
+                    [cookies] =&gt; Requests_Cookie_Jar Object
+                        (
+                            [cookies:protected] =&gt; Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [filename:protected] =&gt; 
+            [data] =&gt; 
+            [headers] =&gt; 
+            [status] =&gt; 
+        )
+
+)
+
+[2022-02-14 18:15:37.869860] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/initiate/?type=pull failed with HTTP error code: 401 - 
+[2022-02-14 18:15:37.870014] [DEBUG] Entering retry with remaining time 26.135777
+[2022-02-14 18:15:37.870175] [CRITICAL] Failed initializing - Got error response from remote initiate service -  Response: 
+
+Array
+(
+    [0] => The site bluetractor.stealthmedia.com is protected by Basic Authentication, which requires a username and password.
+                    If this is the remote site, the username/password should be added to the synchronization configuration.
+                    If the site is the 'local' site, you can add the username/password in the 'Setup' menu.
+    [1] => Could not connect to bluetractor.stealthmedia.com REST service (HTTP statuscode: 401)
+)
+
+[2022-02-14 18:15:37.870404] [CRITICAL] Failed initializing - Could not get a valid token from remote server
+[2022-02-14 18:15:37.870650] [INFO] Initation completed on: 0.60342407226562 seconds
+[2022-02-14 18:15:37.881594] [INFO] Ending sync controller loop - with remaining time: 26.122802972794

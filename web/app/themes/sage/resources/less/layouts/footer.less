@@ -1,0 +1,42 @@
+/***********************************************************************/
+/* FOOTER
+/*
+/* Footer styles.
+/***********************************************************************/
+
+.content-info {
+  height: 4vw;
+  .font-size(14);
+
+
+  .xs({
+    .font-size(11);
+  })
+}
+
+.footer__container {
+  .full-width();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: @bl*2;
+  padding-bottom: @bl*2;
+
+  .xs({
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  });
+
+  .copyright {
+    br {
+      display: none;
+
+      .xs({
+        display: block;
+      });
+    }
+  }
+}
+

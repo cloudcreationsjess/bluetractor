@@ -1,0 +1,171 @@
+/***********************************************************************/
+/******** BUTTONS ******************************************************/
+/***********************************************************************/
+button:focus {outline: 0 !important;}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  .font-size(16);
+  line-height: 1;
+  font-weight: bold;
+  text-transform: none;
+  background-color: transparent;
+  letter-spacing: 0px;
+  border: none;
+  border-radius: 0px;
+  padding: 0px 15px;
+  .transition();
+  .appearance();
+
+  &:hover, &:active, &:not(:disabled):not(.disabled):active {
+    outline: 0;
+    cursor: pointer;
+  }
+}
+
+.btn--icon-right {
+  i, svg {
+    margin-left: @baseline*0.5;
+  }
+}
+
+.btn--icon-left {
+  i, svg {
+    margin-right: @baseline*0.5;
+  }
+}
+
+/* Primary Button */
+.btn--primary, .btn--primary:visited {
+  height: 80px;
+  line-height: 80px;
+  .border-radius(10px);
+  background-color: @accent-color;
+  border: none;
+  color: @white;
+  padding: 0 70px;
+
+  .xs({
+    height: 60px;
+    line-height: 60px;
+    padding: 0 50px;
+    width: 200px;
+  });
+
+  /* Hover */
+
+  &:hover, &:active, &:not(:disabled):not(.disabled):active {
+    //border: none;
+    //background-color: #FFFFFF15;
+    color: @white;
+    background-color: #FFFFFF50;
+    backdrop-filter: blur(11px);
+
+  }
+
+  /* Click */
+
+  &:focus, &:active {
+    border: none;
+    background-color: @accent-color;
+    color: @white;
+    box-shadow: none;
+  }
+}
+
+.btn--secondary, .btn--secondary:visited {
+  height: 80px;
+  line-height: 80px;
+  .border-radius(10px);
+  background-color: @secondary-color;
+  color: @white;
+  padding: 0 40px;
+  box-shadow: none;
+  white-space: nowrap;
+
+  .xs({
+    height: 60px;
+    line-height: 60px;
+    padding: 0 50px;
+    width: 200px;
+  });
+
+  /* Hover */
+
+  &:hover, &:active, &:not(:disabled):not(.disabled):active {
+    background-color: @secondary-color;
+    color: @text-color-primary;
+  }
+
+  /* Click */
+
+  &:focus {
+    background-color: @accent-color;
+    box-shadow: none;
+  }
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.btn--third, .btn--third:visited {
+  height: 80px;
+  line-height: 75px;
+  .border-radius(10px);
+  background-color: transparent;
+  border: 2px solid @secondary-color;
+  color: @white;
+  padding: 0 40px;
+  box-shadow: none;
+  white-space: nowrap;
+
+  .xs({
+    height: 60px;
+    line-height: 55px;
+    padding: 0 50px;
+    min-width: 200px;
+  });
+
+  /* Hover */
+
+  &:hover, &:active, &:not(:disabled):not(.disabled):active {
+    background-color: @secondary-color;
+    color: @white;
+  }
+
+  /* Click */
+
+  &:focus {
+    border: 2px solid @orange;
+    background-color: @accent-color;
+    box-shadow: none;
+  }
+}
+
+//PAGE SPECIFIC BUTTON MODS
+
+.page-id-20 {
+
+  .btn--primary {
+    &:hover {
+      background-color: @orange;
+      color: @dark-grey;
+    }
+  }
+}

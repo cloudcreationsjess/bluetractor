@@ -1,0 +1,1451 @@
+[2022-02-09 22:35:52.174409] [INFO] Running sync controller loop - With allotted time: 26.112053871155 seconds
+[2022-02-09 22:35:52.181232] [INFO] Initating with remote and local host with remaining time:26.105216026306
+[2022-02-09 22:35:52.193674] [DEBUG] Calling initate remote service with url: http://bluetractor.test
+[2022-02-09 22:35:52.932218] [DEBUG] Got initiate token: 998cd4b087c7ee4ed25fc7c3b2d4529f30f043a0f8c02a34a2ad3875766fd3e7
+[2022-02-09 22:35:52.933350] [DEBUG] Calling initate remote service with url: https://bluetractor.stealthmedia.com
+[2022-02-09 22:35:54.372716] [DEBUG] Got initiate token: c0a08e92a384ecfa2d8cf75b964288441b66c1f91eb5d25b7423c55cfbe5ca05
+[2022-02-09 22:35:54.376851] [INFO] Initation completed on: 2.195641040802 seconds
+[2022-02-09 22:35:54.379599] [INFO] Ending sync controller loop - with remaining time: 23.90683889389
+[2022-02-09 22:35:54.851376] [INFO] Running sync controller loop - With allotted time: 26.55832695961 seconds
+[2022-02-09 22:35:54.855908] [INFO] Getting masterdata from source and target with remaining time:26.553694963455
+[2022-02-09 22:35:54.857737] [DEBUG] Calling masterdata service on: http://bluetractor.test with intent to user as 'from'
+[2022-02-09 22:35:55.581279] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-09 22:35:55.941055] [INFO] Completed masterdata on: 1.0851500034332 seconds
+[2022-02-09 22:35:55.958128] [INFO] Ending sync controller loop - with remaining time: 25.451474905014
+[2022-02-09 22:35:56.510427] [INFO] Running sync controller loop - With allotted time: 26.483097076416 seconds
+[2022-02-09 22:35:56.526516] [INFO] Ending sync controller loop - with remaining time: 26.467003107071
+[2022-02-09 22:35:57.123543] [INFO] Running sync controller loop - With allotted time: 26.436817169189 seconds
+[2022-02-09 22:35:57.126773] [INFO] Starting database synchronization loop with remaining time: 26.433578014374
+[2022-02-09 22:35:57.127124] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => https:\/\/bluetractor.stealthmedia.com
+            [from] => http:\/\/bluetractor.test
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => https%3A%2F%2Fbluetractor.stealthmedia.com
+            [from] => http%3A%2F%2Fbluetractor.test
+        )
+
+    [3] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test/wp
+        )
+
+    [4] => stdClass Object
+        (
+            [to] => /home/customer/www/bluetractor.stealthmedia.com/releases/20211129214954/web
+            [from] => C:/laragon/www/bluetractor/web
+        )
+
+)
+
+[2022-02-09 22:35:59.076742] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:35:59.077309] [INFO] New table is started: wp_actionscheduler_actions and setting new default rows per sync: 500
+[2022-02-09 22:35:59.078596] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_actions` where `action_id` > 0 order by `action_id`  limit 500
+[2022-02-09 22:35:59.078910] [INFO] Marking table: wp_actionscheduler_actions as completed
+[2022-02-09 22:35:59.406815] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:35:59.407184] [DEBUG] Lastrun in : 0.3295841217041 seconds - rows throttle: 525 and remaining time: 24.153157949448
+[2022-02-09 22:35:59.407364] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 9 / 52,687
+[2022-02-09 22:35:59.419165] [INFO] New table is started: wp_actionscheduler_claims and setting new default rows per sync: 500
+[2022-02-09 22:35:59.421384] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_claims` where `claim_id` > 0 order by `claim_id`  limit 500
+[2022-02-09 22:35:59.421616] [INFO] Marking table: wp_actionscheduler_claims as completed
+[2022-02-09 22:35:59.421790] [DEBUG] Lastrun in : 0.00099301338195801 seconds - rows throttle: 525 and remaining time: 24.13855099678
+[2022-02-09 22:35:59.421944] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 9 / 52,687
+[2022-02-09 22:35:59.429018] [INFO] New table is started: wp_actionscheduler_groups and setting new default rows per sync: 122
+[2022-02-09 22:35:59.430068] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_groups` where `group_id` > 0 order by `group_id`  limit 122
+[2022-02-09 22:35:59.430273] [INFO] Marking table: wp_actionscheduler_groups as completed
+[2022-02-09 22:35:59.730171] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:35:59.730745] [DEBUG] Lastrun in : 0.30145502090454 seconds - rows throttle: 129 and remaining time: 23.829602003098
+[2022-02-09 22:35:59.731075] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 11 / 52,687
+[2022-02-09 22:35:59.751523] [INFO] New table is started: wp_actionscheduler_logs and setting new default rows per sync: 500
+[2022-02-09 22:35:59.756922] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_logs` where `log_id` > 0 order by `log_id`  limit 500
+[2022-02-09 22:35:59.757412] [INFO] Marking table: wp_actionscheduler_logs as completed
+[2022-02-09 22:36:00.080046] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:00.080564] [DEBUG] Lastrun in : 0.32770895957947 seconds - rows throttle: 525 and remaining time: 23.479781150818
+[2022-02-09 22:36:00.080907] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 34 / 52,687
+[2022-02-09 22:36:00.093657] [INFO] New table is started: wp_aioseo_cache and setting new default rows per sync: 48
+[2022-02-09 22:36:00.094937] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_cache` where `id` > 0 order by `id`  limit 48
+[2022-02-09 22:36:00.095288] [INFO] Marking table: wp_aioseo_cache as completed
+[2022-02-09 22:36:00.723018] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:00.723499] [DEBUG] Lastrun in : 0.62951183319092 seconds - rows throttle: 51 and remaining time: 22.836845159531
+[2022-02-09 22:36:00.723815] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 38 / 52,687
+[2022-02-09 22:36:00.738753] [INFO] New table is started: wp_aioseo_notifications and setting new default rows per sync: 183
+[2022-02-09 22:36:00.740556] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_notifications` where `id` > 0 order by `id`  limit 183
+[2022-02-09 22:36:00.740964] [INFO] Marking table: wp_aioseo_notifications as completed
+[2022-02-09 22:36:01.067165] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:01.068824] [DEBUG] Lastrun in : 0.32940912246704 seconds - rows throttle: 193 and remaining time: 22.49152302742
+[2022-02-09 22:36:01.069169] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 41 / 52,687
+[2022-02-09 22:36:01.086598] [INFO] New table is started: wp_aioseo_posts and setting new default rows per sync: 151
+[2022-02-09 22:36:01.089642] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_posts` where `id` > 0 order by `id`  limit 151
+[2022-02-09 22:36:01.089852] [INFO] Marking table: wp_aioseo_posts as completed
+[2022-02-09 22:36:01.475168] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:01.475409] [DEBUG] Lastrun in : 0.38847303390503 seconds - rows throttle: 159 and remaining time: 22.084932088852
+[2022-02-09 22:36:01.475574] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 144 / 52,687
+[2022-02-09 22:36:01.486181] [INFO] New table is started: wp_commentmeta and setting new default rows per sync: 500
+[2022-02-09 22:36:01.487778] [DEBUG] Getting data from local DB with SQL query: select * from `wp_commentmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-09 22:36:01.487982] [INFO] Marking table: wp_commentmeta as completed
+[2022-02-09 22:36:01.488093] [DEBUG] Lastrun in : 0.0016469955444336 seconds - rows throttle: 525 and remaining time: 22.072247028351
+[2022-02-09 22:36:01.488204] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 144 / 52,687
+[2022-02-09 22:36:01.494863] [INFO] New table is started: wp_comments and setting new default rows per sync: 500
+[2022-02-09 22:36:01.496203] [DEBUG] Getting data from local DB with SQL query: select * from `wp_comments` where `comment_ID` > 0 order by `comment_ID`  limit 500
+[2022-02-09 22:36:01.496425] [INFO] Marking table: wp_comments as completed
+[2022-02-09 22:36:01.496663] [DEBUG] Lastrun in : 0.0015919208526611 seconds - rows throttle: 525 and remaining time: 22.063678026199
+[2022-02-09 22:36:01.496827] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 144 / 52,687
+[2022-02-09 22:36:01.505256] [INFO] New table is started: wp_links and setting new default rows per sync: 500
+[2022-02-09 22:36:01.506721] [DEBUG] Getting data from local DB with SQL query: select * from `wp_links` where `link_id` > 0 order by `link_id`  limit 500
+[2022-02-09 22:36:01.506898] [INFO] Marking table: wp_links as completed
+[2022-02-09 22:36:01.507007] [DEBUG] Lastrun in : 0.0015230178833008 seconds - rows throttle: 525 and remaining time: 22.053332090378
+[2022-02-09 22:36:01.507122] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 144 / 52,687
+[2022-02-09 22:36:01.515192] [INFO] New table is started: wp_options and setting new default rows per sync: 50
+[2022-02-09 22:36:01.516045] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 0 order by `option_id`  limit 50
+[2022-02-09 22:36:01.791954] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:01.792313] [DEBUG] Lastrun in : 0.2769091129303 seconds - rows throttle: 53 and remaining time: 21.768028020859
+[2022-02-09 22:36:01.792495] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 194 / 52,687
+[2022-02-09 22:36:01.804996] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 53 order by `option_id`  limit 53
+[2022-02-09 22:36:02.073311] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:02.073623] [DEBUG] Lastrun in : 0.26936507225037 seconds - rows throttle: 56 and remaining time: 21.48671913147
+[2022-02-09 22:36:02.073773] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 247 / 52,687
+[2022-02-09 22:36:02.087944] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 106 order by `option_id`  limit 56
+[2022-02-09 22:36:02.449172] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:02.449902] [DEBUG] Lastrun in : 0.36400198936462 seconds - rows throttle: 59 and remaining time: 21.11045217514
+[2022-02-09 22:36:02.450422] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 303 / 52,687
+[2022-02-09 22:36:02.488604] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 668 order by `option_id`  limit 59
+[2022-02-09 22:36:02.488922] [INFO] Marking table: wp_options as completed
+[2022-02-09 22:36:04.223074] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:04.223586] [DEBUG] Lastrun in : 1.7629420757294 seconds - rows throttle: 62 and remaining time: 19.336755990982
+[2022-02-09 22:36:04.223818] [INFO] Database progress update: Data: 0.0MB / 10.6MB - Rows: 361 / 52,687
+[2022-02-09 22:36:04.235344] [INFO] New table is started: wp_postmeta and setting new default rows per sync: 500
+[2022-02-09 22:36:04.239083] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-09 22:36:04.608583] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:04.608974] [DEBUG] Lastrun in : 0.37329411506653 seconds - rows throttle: 525 and remaining time: 18.951369047165
+[2022-02-09 22:36:04.609183] [INFO] Database progress update: Data: 0.1MB / 10.6MB - Rows: 861 / 52,687
+[2022-02-09 22:36:04.624320] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 587 order by `meta_id`  limit 525
+[2022-02-09 22:36:04.943040] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:04.943543] [DEBUG] Lastrun in : 0.32128190994263 seconds - rows throttle: 552 and remaining time: 18.616804122925
+[2022-02-09 22:36:04.943798] [INFO] Database progress update: Data: 0.2MB / 10.6MB - Rows: 1,386 / 52,687
+[2022-02-09 22:36:04.955981] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 1180 order by `meta_id`  limit 552
+[2022-02-09 22:36:05.329196] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:05.329475] [DEBUG] Lastrun in : 0.3756639957428 seconds - rows throttle: 580 and remaining time: 18.230865001678
+[2022-02-09 22:36:05.329609] [INFO] Database progress update: Data: 0.3MB / 10.6MB - Rows: 1,938 / 52,687
+[2022-02-09 22:36:05.344140] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 1756 order by `meta_id`  limit 580
+[2022-02-09 22:36:05.770811] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:05.771105] [DEBUG] Lastrun in : 0.42978000640869 seconds - rows throttle: 609 and remaining time: 17.789236068726
+[2022-02-09 22:36:05.771257] [INFO] Database progress update: Data: 0.4MB / 10.6MB - Rows: 2,518 / 52,687
+[2022-02-09 22:36:05.780147] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 2380 order by `meta_id`  limit 609
+[2022-02-09 22:36:06.087008] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:06.087520] [DEBUG] Lastrun in : 0.30945515632629 seconds - rows throttle: 640 and remaining time: 17.472825050354
+[2022-02-09 22:36:06.087707] [INFO] Database progress update: Data: 0.5MB / 10.6MB - Rows: 3,127 / 52,687
+[2022-02-09 22:36:06.101934] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 3105 order by `meta_id`  limit 640
+[2022-02-09 22:36:06.497082] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:06.497473] [DEBUG] Lastrun in : 0.39979696273804 seconds - rows throttle: 672 and remaining time: 17.06286907196
+[2022-02-09 22:36:06.497688] [INFO] Database progress update: Data: 0.7MB / 10.6MB - Rows: 3,767 / 52,687
+[2022-02-09 22:36:06.511726] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 3763 order by `meta_id`  limit 672
+[2022-02-09 22:36:06.931231] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:06.931545] [DEBUG] Lastrun in : 0.42251515388489 seconds - rows throttle: 706 and remaining time: 16.628795146942
+[2022-02-09 22:36:06.931696] [INFO] Database progress update: Data: 0.8MB / 10.6MB - Rows: 4,439 / 52,687
+[2022-02-09 22:36:06.948988] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 4489 order by `meta_id`  limit 706
+[2022-02-09 22:36:07.270621] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:07.271895] [DEBUG] Lastrun in : 0.3260281085968 seconds - rows throttle: 742 and remaining time: 16.288463115692
+[2022-02-09 22:36:07.272437] [INFO] Database progress update: Data: 1.0MB / 10.6MB - Rows: 5,145 / 52,687
+[2022-02-09 22:36:07.289279] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 5281 order by `meta_id`  limit 742
+[2022-02-09 22:36:07.597411] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:07.597742] [DEBUG] Lastrun in : 0.31459283828735 seconds - rows throttle: 780 and remaining time: 15.962599039078
+[2022-02-09 22:36:07.597909] [INFO] Database progress update: Data: 1.2MB / 10.6MB - Rows: 5,887 / 52,687
+[2022-02-09 22:36:07.611890] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 6023 order by `meta_id`  limit 780
+[2022-02-09 22:36:07.926406] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:07.926723] [DEBUG] Lastrun in : 0.31755304336548 seconds - rows throttle: 819 and remaining time: 15.633619070053
+[2022-02-09 22:36:07.926885] [INFO] Database progress update: Data: 1.3MB / 10.6MB - Rows: 6,667 / 52,687
+[2022-02-09 22:36:07.941384] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 6803 order by `meta_id`  limit 819
+[2022-02-09 22:36:08.247573] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:08.247922] [DEBUG] Lastrun in : 0.31066918373108 seconds - rows throttle: 860 and remaining time: 15.312420129776
+[2022-02-09 22:36:08.248092] [INFO] Database progress update: Data: 1.5MB / 10.6MB - Rows: 7,486 / 52,687
+[2022-02-09 22:36:08.265302] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 7628 order by `meta_id`  limit 860
+[2022-02-09 22:36:08.595291] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:08.595637] [DEBUG] Lastrun in : 0.33443117141724 seconds - rows throttle: 903 and remaining time: 14.964704990387
+[2022-02-09 22:36:08.595833] [INFO] Database progress update: Data: 1.6MB / 10.6MB - Rows: 8,346 / 52,687
+[2022-02-09 22:36:08.611434] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 8498 order by `meta_id`  limit 903
+[2022-02-09 22:36:08.957887] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:08.958211] [DEBUG] Lastrun in : 0.35051918029785 seconds - rows throttle: 949 and remaining time: 14.602130174637
+[2022-02-09 22:36:08.958389] [INFO] Database progress update: Data: 1.8MB / 10.6MB - Rows: 9,249 / 52,687
+[2022-02-09 22:36:08.975609] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 9475 order by `meta_id`  limit 949
+[2022-02-09 22:36:09.278745] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:09.279060] [DEBUG] Lastrun in : 0.30908799171448 seconds - rows throttle: 997 and remaining time: 14.281283140182
+[2022-02-09 22:36:09.279223] [INFO] Database progress update: Data: 2.0MB / 10.6MB - Rows: 10,198 / 52,687
+[2022-02-09 22:36:09.295890] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 10572 order by `meta_id`  limit 997
+[2022-02-09 22:36:09.607527] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:09.607839] [DEBUG] Lastrun in : 0.31611609458923 seconds - rows throttle: 1047 and remaining time: 13.952502012253
+[2022-02-09 22:36:09.608007] [INFO] Database progress update: Data: 2.2MB / 10.6MB - Rows: 11,195 / 52,687
+[2022-02-09 22:36:09.624608] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 11569 order by `meta_id`  limit 1047
+[2022-02-09 22:36:09.959476] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:10.260453] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:10.260762] [DEBUG] Lastrun in : 0.6410219669342 seconds - rows throttle: 1100 and remaining time: 13.299580097198
+[2022-02-09 22:36:10.260914] [INFO] Database progress update: Data: 2.4MB / 10.6MB - Rows: 12,242 / 52,687
+[2022-02-09 22:36:10.277439] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 12644 order by `meta_id`  limit 1100
+[2022-02-09 22:36:10.612035] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:10.905904] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:10.906490] [DEBUG] Lastrun in : 0.63292217254639 seconds - rows throttle: 1155 and remaining time: 12.653851985931
+[2022-02-09 22:36:10.906711] [INFO] Database progress update: Data: 2.7MB / 10.6MB - Rows: 13,342 / 52,687
+[2022-02-09 22:36:10.924954] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 13752 order by `meta_id`  limit 1155
+[2022-02-09 22:36:11.244402] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:11.539804] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:11.540118] [DEBUG] Lastrun in : 0.61964297294617 seconds - rows throttle: 1213 and remaining time: 12.020224094391
+[2022-02-09 22:36:11.540287] [INFO] Database progress update: Data: 2.9MB / 10.6MB - Rows: 14,497 / 52,687
+[2022-02-09 22:36:11.558077] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 14929 order by `meta_id`  limit 1213
+[2022-02-09 22:36:11.975927] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:12.280540] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:12.280840] [DEBUG] Lastrun in : 0.72860407829285 seconds - rows throttle: 1274 and remaining time: 11.279500961304
+[2022-02-09 22:36:12.281000] [INFO] Database progress update: Data: 3.1MB / 10.6MB - Rows: 15,710 / 52,687
+[2022-02-09 22:36:12.299576] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 16188 order by `meta_id`  limit 1274
+[2022-02-09 22:36:12.625141] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:12.924343] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:12.924637] [DEBUG] Lastrun in : 0.62982606887817 seconds - rows throttle: 1338 and remaining time: 10.635704994202
+[2022-02-09 22:36:12.924812] [INFO] Database progress update: Data: 3.4MB / 10.6MB - Rows: 16,984 / 52,687
+[2022-02-09 22:36:12.943173] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 17464 order by `meta_id`  limit 1338
+[2022-02-09 22:36:13.348715] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:13.681469] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:13.681726] [DEBUG] Lastrun in : 0.74524188041687 seconds - rows throttle: 1405 and remaining time: 9.8786160945892
+[2022-02-09 22:36:13.681873] [INFO] Database progress update: Data: 3.6MB / 10.6MB - Rows: 18,322 / 52,687
+[2022-02-09 22:36:13.703989] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 18816 order by `meta_id`  limit 1405
+[2022-02-09 22:36:14.069247] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:14.349574] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:14.350660] [DEBUG] Lastrun in : 0.65524482727051 seconds - rows throttle: 1476 and remaining time: 9.20969414711
+[2022-02-09 22:36:14.351191] [INFO] Database progress update: Data: 3.9MB / 10.6MB - Rows: 19,727 / 52,687
+[2022-02-09 22:36:14.372507] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 20221 order by `meta_id`  limit 1476
+[2022-02-09 22:36:14.740736] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:15.025880] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:15.026145] [DEBUG] Lastrun in : 0.66172814369202 seconds - rows throttle: 1550 and remaining time: 8.5341970920563
+[2022-02-09 22:36:15.026314] [INFO] Database progress update: Data: 4.2MB / 10.6MB - Rows: 21,203 / 52,687
+[2022-02-09 22:36:15.042831] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 21879 order by `meta_id`  limit 1550
+[2022-02-09 22:36:15.424149] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:15.796893] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:15.797194] [DEBUG] Lastrun in : 0.76179480552673 seconds - rows throttle: 1628 and remaining time: 7.7631471157074
+[2022-02-09 22:36:15.797356] [INFO] Database progress update: Data: 4.6MB / 10.6MB - Rows: 22,753 / 52,687
+[2022-02-09 22:36:15.815909] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 23429 order by `meta_id`  limit 1628
+[2022-02-09 22:36:16.166838] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:16.473753] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:16.474057] [DEBUG] Lastrun in : 0.66427183151245 seconds - rows throttle: 1710 and remaining time: 7.0862860679626
+[2022-02-09 22:36:16.474216] [INFO] Database progress update: Data: 4.9MB / 10.6MB - Rows: 24,381 / 52,687
+[2022-02-09 22:36:16.491594] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 25080 order by `meta_id`  limit 1710
+[2022-02-09 22:36:16.863653] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:17.162460] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:17.162800] [DEBUG] Lastrun in : 0.67729306221008 seconds - rows throttle: 1796 and remaining time: 6.3975419998169
+[2022-02-09 22:36:17.162981] [INFO] Database progress update: Data: 5.2MB / 10.6MB - Rows: 26,091 / 52,687
+[2022-02-09 22:36:17.186470] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 26821 order by `meta_id`  limit 1796
+[2022-02-09 22:36:18.173321] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:19.839630] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead
+[2022-02-09 22:36:19.839927] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Wed, 09 Feb 2022 22:36:19 GMT
+                    [content-type] =&gt; application/json; charset=UTF-8
+                    [content-length] =&gt; 98
+                    [x-robots-tag] =&gt; noindex
+                    [link] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                    [x-content-type-options] =&gt; nosniff
+                    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                    [access-control-allow-headers] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                    [vary] =&gt; Accept-Encoding,User-Agent
+                    [x-httpd-modphp] =&gt; 1
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Wed, 09 Feb 2022 22:36:19 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 98
+Connection: close
+X-Robots-Tag: noindex
+Link: &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+Vary: Accept-Encoding,User-Agent
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+{&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Wed, 09 Feb 2022 22:36:19 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; application/json; charset=UTF-8
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 98
+                                        )
+
+                                    [x-robots-tag] =&gt; Array
+                                        (
+                                            [0] =&gt; noindex
+                                        )
+
+                                    [link] =&gt; Array
+                                        (
+                                            [0] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                                        )
+
+                                    [x-content-type-options] =&gt; Array
+                                        (
+                                            [0] =&gt; nosniff
+                                        )
+
+                                    [access-control-expose-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                                        )
+
+                                    [access-control-allow-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                                        )
+
+                                    [vary] =&gt; Array
+                                        (
+                                            [0] =&gt; Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-httpd-modphp] =&gt; Array
+                                        (
+                                            [0] =&gt; 1
+                                        )
+
+                                    [host-header] =&gt; Array
+               
+[2022-02-09 22:36:19.840099] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead failed with HTTP error code: 401 - 
+[2022-02-09 22:36:19.840221] [DEBUG] Entering retry with remaining time 5.087219
+[2022-02-09 22:36:19.840347] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:19.840464] [DEBUG] Lastrun in : 2.6636328697205 seconds - rows throttle: 1886 and remaining time: 3.7198760509491
+[2022-02-09 22:36:19.840590] [INFO] Database progress update: Data: 5.5MB / 10.6MB - Rows: 27,887 / 52,687
+[2022-02-09 22:36:19.853255] [INFO] Ending database synchronization loop with remaining time: 3.7071051597595 seconds
+[2022-02-09 22:36:19.863361] [INFO] Ending sync controller loop - with remaining time: 3.6969921588898
+[2022-02-09 22:36:20.149688] [INFO] Running sync controller loop - With allotted time: 26.728402137756 seconds
+[2022-02-09 22:36:20.152502] [INFO] Starting database synchronization loop with remaining time: 26.725552082062
+[2022-02-09 22:36:20.152821] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => https:\/\/bluetractor.stealthmedia.com
+            [from] => http:\/\/bluetractor.test
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => https%3A%2F%2Fbluetractor.stealthmedia.com
+            [from] => http%3A%2F%2Fbluetractor.test
+        )
+
+    [3] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test/wp
+        )
+
+    [4] => stdClass Object
+        (
+            [to] => /home/customer/www/bluetractor.stealthmedia.com/releases/20211129214954/web
+            [from] => C:/laragon/www/bluetractor/web
+        )
+
+)
+
+[2022-02-09 22:36:20.160062] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 28674 order by `meta_id`  limit 1886
+[2022-02-09 22:36:20.507678] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:20.840013] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:20.840333] [DEBUG] Lastrun in : 0.6872570514679 seconds - rows throttle: 1981 and remaining time: 26.037717103958
+[2022-02-09 22:36:20.840525] [INFO] Database progress update: Data: 5.9MB / 10.6MB - Rows: 29,773 / 52,687
+[2022-02-09 22:36:20.860089] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 30630 order by `meta_id`  limit 1981
+[2022-02-09 22:36:22.697849] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead
+[2022-02-09 22:36:22.698374] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Wed, 09 Feb 2022 22:36:22 GMT
+                    [content-type] =&gt; application/json; charset=UTF-8
+                    [content-length] =&gt; 98
+                    [x-robots-tag] =&gt; noindex
+                    [link] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                    [x-content-type-options] =&gt; nosniff
+                    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                    [access-control-allow-headers] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                    [vary] =&gt; Accept-Encoding,User-Agent
+                    [x-httpd-modphp] =&gt; 1
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Wed, 09 Feb 2022 22:36:22 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 98
+Connection: close
+X-Robots-Tag: noindex
+Link: &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+Vary: Accept-Encoding,User-Agent
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+{&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Wed, 09 Feb 2022 22:36:22 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; application/json; charset=UTF-8
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 98
+                                        )
+
+                                    [x-robots-tag] =&gt; Array
+                                        (
+                                            [0] =&gt; noindex
+                                        )
+
+                                    [link] =&gt; Array
+                                        (
+                                            [0] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                                        )
+
+                                    [x-content-type-options] =&gt; Array
+                                        (
+                                            [0] =&gt; nosniff
+                                        )
+
+                                    [access-control-expose-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                                        )
+
+                                    [access-control-allow-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                                        )
+
+                                    [vary] =&gt; Array
+                                        (
+                                            [0] =&gt; Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-httpd-modphp] =&gt; Array
+                                        (
+                                            [0] =&gt; 1
+                                        )
+
+                                    [host-header] =&gt; Array
+               
+[2022-02-09 22:36:22.698703] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead failed with HTTP error code: 401 - 
+[2022-02-09 22:36:22.698941] [DEBUG] Entering retry with remaining time 25.622259
+[2022-02-09 22:36:22.699171] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:23.075778] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:23.076324] [DEBUG] Lastrun in : 2.2235329151154 seconds - rows throttle: 2081 and remaining time: 23.801729917526
+[2022-02-09 22:36:23.076666] [INFO] Database progress update: Data: 6.4MB / 10.6MB - Rows: 31,754 / 52,687
+[2022-02-09 22:36:23.110383] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 32649 order by `meta_id`  limit 2081
+[2022-02-09 22:36:23.594300] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:24.014654] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:24.306387] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:24.306782] [DEBUG] Lastrun in : 1.2102060317993 seconds - rows throttle: 2186 and remaining time: 22.571269035339
+[2022-02-09 22:36:24.307009] [INFO] Database progress update: Data: 6.8MB / 10.6MB - Rows: 33,835 / 52,687
+[2022-02-09 22:36:24.330608] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 34734 order by `meta_id`  limit 2186
+[2022-02-09 22:36:24.720363] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:25.091902] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:25.476095] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:25.476647] [DEBUG] Lastrun in : 1.1543209552765 seconds - rows throttle: 2296 and remaining time: 21.401407003403
+[2022-02-09 22:36:25.476999] [INFO] Database progress update: Data: 7.2MB / 10.6MB - Rows: 36,021 / 52,687
+[2022-02-09 22:36:25.517921] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 37282 order by `meta_id`  limit 2296
+[2022-02-09 22:36:27.359183] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead
+[2022-02-09 22:36:27.359725] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Wed, 09 Feb 2022 22:36:27 GMT
+                    [content-type] =&gt; application/json; charset=UTF-8
+                    [content-length] =&gt; 98
+                    [x-robots-tag] =&gt; noindex
+                    [link] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                    [x-content-type-options] =&gt; nosniff
+                    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                    [access-control-allow-headers] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                    [vary] =&gt; Accept-Encoding,User-Agent
+                    [x-httpd-modphp] =&gt; 1
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Wed, 09 Feb 2022 22:36:27 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 98
+Connection: close
+X-Robots-Tag: noindex
+Link: &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+Vary: Accept-Encoding,User-Agent
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+{&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Wed, 09 Feb 2022 22:36:27 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; application/json; charset=UTF-8
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 98
+                                        )
+
+                                    [x-robots-tag] =&gt; Array
+                                        (
+                                            [0] =&gt; noindex
+                                        )
+
+                                    [link] =&gt; Array
+                                        (
+                                            [0] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                                        )
+
+                                    [x-content-type-options] =&gt; Array
+                                        (
+                                            [0] =&gt; nosniff
+                                        )
+
+                                    [access-control-expose-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                                        )
+
+                                    [access-control-allow-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                                        )
+
+                                    [vary] =&gt; Array
+                                        (
+                                            [0] =&gt; Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-httpd-modphp] =&gt; Array
+                                        (
+                                            [0] =&gt; 1
+                                        )
+
+                                    [host-header] =&gt; Array
+               
+[2022-02-09 22:36:27.360076] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead failed with HTTP error code: 401 - 
+[2022-02-09 22:36:27.360331] [DEBUG] Entering retry with remaining time 20.936855
+[2022-02-09 22:36:27.360610] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:27.723797] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:28.039373] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:28.039944] [DEBUG] Lastrun in : 2.5423958301544 seconds - rows throttle: 2411 and remaining time: 18.838110923767
+[2022-02-09 22:36:28.040305] [INFO] Database progress update: Data: 7.6MB / 10.6MB - Rows: 38,317 / 52,687
+[2022-02-09 22:36:28.072829] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 39794 order by `meta_id`  limit 2411
+[2022-02-09 22:36:29.375973] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:29.802287] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:30.130918] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:30.131443] [DEBUG] Lastrun in : 2.0734059810638 seconds - rows throttle: 2532 and remaining time: 16.746611118317
+[2022-02-09 22:36:30.131806] [INFO] Database progress update: Data: 8.2MB / 10.6MB - Rows: 40,728 / 52,687
+[2022-02-09 22:36:30.170954] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 42206 order by `meta_id`  limit 2532
+[2022-02-09 22:36:30.643731] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:30.997296] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:31.542560] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:31.543099] [DEBUG] Lastrun in : 1.3912010192871 seconds - rows throttle: 2659 and remaining time: 15.334954977036
+[2022-02-09 22:36:31.543391] [INFO] Database progress update: Data: 8.7MB / 10.6MB - Rows: 43,260 / 52,687
+[2022-02-09 22:36:31.567033] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 44790 order by `meta_id`  limit 2659
+[2022-02-09 22:36:31.943518] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:32.280097] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:32.694609] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:32.695154] [DEBUG] Lastrun in : 1.1375210285187 seconds - rows throttle: 2792 and remaining time: 14.182901144028
+[2022-02-09 22:36:32.695491] [INFO] Database progress update: Data: 9.2MB / 10.6MB - Rows: 45,919 / 52,687
+[2022-02-09 22:36:32.741776] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 47449 order by `meta_id`  limit 2792
+[2022-02-09 22:36:33.144783] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:33.474252] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:33.777845] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:33.778446] [DEBUG] Lastrun in : 1.0589859485626 seconds - rows throttle: 2932 and remaining time: 13.099609136581
+[2022-02-09 22:36:33.778801] [INFO] Database progress update: Data: 9.8MB / 10.6MB - Rows: 48,711 / 52,687
+[2022-02-09 22:36:33.815760] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 50241 order by `meta_id`  limit 2932
+[2022-02-09 22:36:34.186935] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:34.574216] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:34.974143] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:34.974719] [DEBUG] Lastrun in : 1.1763708591461 seconds - rows throttle: 3079 and remaining time: 11.903336048126
+[2022-02-09 22:36:34.975114] [INFO] Database progress update: Data: 10.4MB / 10.6MB - Rows: 51,643 / 52,687
+[2022-02-09 22:36:34.998355] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 53177 order by `meta_id`  limit 3079
+[2022-02-09 22:36:34.998793] [INFO] Marking table: wp_postmeta as completed
+[2022-02-09 22:36:35.356767] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:35.357443] [DEBUG] Lastrun in : 0.36204695701599 seconds - rows throttle: 3233 and remaining time: 11.520612955093
+[2022-02-09 22:36:35.357820] [INFO] Database progress update: Data: 10.4MB / 10.6MB - Rows: 52,030 / 52,687
+[2022-02-09 22:36:35.376091] [INFO] New table is started: wp_posts and setting new default rows per sync: 500
+[2022-02-09 22:36:35.384852] [DEBUG] Getting data from local DB with SQL query: select * from `wp_posts` where `ID` > 0 order by `ID`  limit 500
+[2022-02-09 22:36:35.916014] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:35.916998] [DEBUG] Lastrun in : 0.54036021232605 seconds - rows throttle: 525 and remaining time: 10.96106505394
+[2022-02-09 22:36:35.917633] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,530 / 52,687
+[2022-02-09 22:36:35.940634] [DEBUG] Getting data from local DB with SQL query: select * from `wp_posts` where `ID` > 641 order by `ID`  limit 525
+[2022-02-09 22:36:35.941019] [INFO] Marking table: wp_posts as completed
+[2022-02-09 22:36:36.276893] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:36.277450] [DEBUG] Lastrun in : 0.33820199966431 seconds - rows throttle: 552 and remaining time: 10.600604057312
+[2022-02-09 22:36:36.277792] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,590 / 52,687
+[2022-02-09 22:36:36.293404] [INFO] New table is started: wp_term_relationships and setting new default rows per sync: 500
+[2022-02-09 22:36:36.294240] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_relationships` limit 0,500
+[2022-02-09 22:36:36.294501] [INFO] Marking table: wp_term_relationships as completed
+[2022-02-09 22:36:36.590923] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:36.591475] [DEBUG] Lastrun in : 0.29772090911865 seconds - rows throttle: 525 and remaining time: 10.286580085754
+[2022-02-09 22:36:36.591815] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,609 / 52,687
+[2022-02-09 22:36:36.611931] [INFO] New table is started: wp_term_taxonomy and setting new default rows per sync: 244
+[2022-02-09 22:36:36.613471] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_taxonomy` where `term_taxonomy_id` > 0 order by `term_taxonomy_id`  limit 244
+[2022-02-09 22:36:36.613895] [INFO] Marking table: wp_term_taxonomy as completed
+[2022-02-09 22:36:36.919278] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:36.920260] [DEBUG] Lastrun in : 0.30774593353271 seconds - rows throttle: 257 and remaining time: 9.957818031311
+[2022-02-09 22:36:36.921070] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,613 / 52,687
+[2022-02-09 22:36:36.938612] [INFO] New table is started: wp_termmeta and setting new default rows per sync: 500
+[2022-02-09 22:36:36.942030] [DEBUG] Getting data from local DB with SQL query: select * from `wp_termmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-09 22:36:36.942405] [INFO] Marking table: wp_termmeta as completed
+[2022-02-09 22:36:36.942696] [DEBUG] Lastrun in : 0.0032639503479004 seconds - rows throttle: 525 and remaining time: 9.9353561401367
+[2022-02-09 22:36:36.942954] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,613 / 52,687
+[2022-02-09 22:36:36.959055] [INFO] New table is started: wp_terms and setting new default rows per sync: 244
+[2022-02-09 22:36:36.960333] [DEBUG] Getting data from local DB with SQL query: select * from `wp_terms` where `term_id` > 0 order by `term_id`  limit 244
+[2022-02-09 22:36:36.960696] [INFO] Marking table: wp_terms as completed
+[2022-02-09 22:36:38.590348] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead
+[2022-02-09 22:36:38.590872] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Wed, 09 Feb 2022 22:36:38 GMT
+                    [content-type] =&gt; application/json; charset=UTF-8
+                    [content-length] =&gt; 98
+                    [x-robots-tag] =&gt; noindex
+                    [link] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                    [x-content-type-options] =&gt; nosniff
+                    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                    [access-control-allow-headers] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                    [vary] =&gt; Accept-Encoding,User-Agent
+                    [x-httpd-modphp] =&gt; 1
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Wed, 09 Feb 2022 22:36:38 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 98
+Connection: close
+X-Robots-Tag: noindex
+Link: &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+Vary: Accept-Encoding,User-Agent
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+{&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Wed, 09 Feb 2022 22:36:38 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; application/json; charset=UTF-8
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 98
+                                        )
+
+                                    [x-robots-tag] =&gt; Array
+                                        (
+                                            [0] =&gt; noindex
+                                        )
+
+                                    [link] =&gt; Array
+                                        (
+                                            [0] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                                        )
+
+                                    [x-content-type-options] =&gt; Array
+                                        (
+                                            [0] =&gt; nosniff
+                                        )
+
+                                    [access-control-expose-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                                        )
+
+                                    [access-control-allow-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                                        )
+
+                                    [vary] =&gt; Array
+                                        (
+                                            [0] =&gt; Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-httpd-modphp] =&gt; Array
+                                        (
+                                            [0] =&gt; 1
+                                        )
+
+                                    [host-header] =&gt; Array
+               
+[2022-02-09 22:36:38.591247] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead failed with HTTP error code: 401 - 
+[2022-02-09 22:36:38.591501] [DEBUG] Entering retry with remaining time 9.602680
+[2022-02-09 22:36:38.591724] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:38.591977] [DEBUG] Lastrun in : 1.6324620246887 seconds - rows throttle: 257 and remaining time: 8.2860751152039
+[2022-02-09 22:36:38.592287] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,617 / 52,687
+[2022-02-09 22:36:38.613065] [INFO] New table is started: wp_usermeta and setting new default rows per sync: 500
+[2022-02-09 22:36:38.614929] [DEBUG] Getting data from local DB with SQL query: select * from `wp_usermeta` where `umeta_id` > 0 order by `umeta_id`  limit 500
+[2022-02-09 22:36:38.615273] [INFO] Marking table: wp_usermeta as completed
+[2022-02-09 22:36:40.256390] [DEBUG] Error calling REST service - Got HTTP 401 on this url: https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead
+[2022-02-09 22:36:40.256636] [DEBUG] Array
+(
+    [headers] =&gt; Requests_Utility_CaseInsensitiveDictionary Object
+        (
+            [data:protected] =&gt; Array
+                (
+                    [server] =&gt; nginx
+                    [date] =&gt; Wed, 09 Feb 2022 22:36:40 GMT
+                    [content-type] =&gt; application/json; charset=UTF-8
+                    [content-length] =&gt; 98
+                    [x-robots-tag] =&gt; noindex
+                    [link] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                    [x-content-type-options] =&gt; nosniff
+                    [access-control-expose-headers] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                    [access-control-allow-headers] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                    [vary] =&gt; Accept-Encoding,User-Agent
+                    [x-httpd-modphp] =&gt; 1
+                    [host-header] =&gt; 8441280b0c35cbc1147f8ba998a563a7
+                    [x-proxy-cache-info] =&gt; DT:1
+                )
+
+        )
+
+    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+    [response] =&gt; Array
+        (
+            [code] =&gt; 401
+            [message] =&gt; Unauthorized
+        )
+
+    [cookies] =&gt; Array
+        (
+        )
+
+    [filename] =&gt; 
+    [http_response] =&gt; WP_HTTP_Requests_Response Object
+        (
+            [response:protected] =&gt; Requests_Response Object
+                (
+                    [body] =&gt; {&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [raw] =&gt; HTTP/1.1 401 Unauthorized
+Server: nginx
+Date: Wed, 09 Feb 2022 22:36:40 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 98
+Connection: close
+X-Robots-Tag: noindex
+Link: &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+Vary: Accept-Encoding,User-Agent
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+X-Proxy-Cache-Info: DT:1
+
+{&quot;code&quot;:&quot;rest_forbidden&quot;,&quot;message&quot;:&quot;Sorry, you are not allowed to do that.&quot;,&quot;data&quot;:{&quot;status&quot;:401}}
+                    [headers] =&gt; Requests_Response_Headers Object
+                        (
+                            [data:protected] =&gt; Array
+                                (
+                                    [server] =&gt; Array
+                                        (
+                                            [0] =&gt; nginx
+                                        )
+
+                                    [date] =&gt; Array
+                                        (
+                                            [0] =&gt; Wed, 09 Feb 2022 22:36:40 GMT
+                                        )
+
+                                    [content-type] =&gt; Array
+                                        (
+                                            [0] =&gt; application/json; charset=UTF-8
+                                        )
+
+                                    [content-length] =&gt; Array
+                                        (
+                                            [0] =&gt; 98
+                                        )
+
+                                    [x-robots-tag] =&gt; Array
+                                        (
+                                            [0] =&gt; noindex
+                                        )
+
+                                    [link] =&gt; Array
+                                        (
+                                            [0] =&gt; &lt;https://stealthmedia.com/wp-json/&gt;; rel=&quot;https://api.w.org/&quot;
+                                        )
+
+                                    [x-content-type-options] =&gt; Array
+                                        (
+                                            [0] =&gt; nosniff
+                                        )
+
+                                    [access-control-expose-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; X-WP-Total, X-WP-TotalPages, Link
+                                        )
+
+                                    [access-control-allow-headers] =&gt; Array
+                                        (
+                                            [0] =&gt; Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+                                        )
+
+                                    [vary] =&gt; Array
+                                        (
+                                            [0] =&gt; Accept-Encoding,User-Agent
+                                        )
+
+                                    [x-httpd-modphp] =&gt; Array
+                                        (
+                                            [0] =&gt; 1
+                                        )
+
+                                    [host-header] =&gt; Array
+               
+[2022-02-09 22:36:40.256748] [DEBUG] Call to REST service at url https://bluetractor.stealthmedia.com/wp-json/wpsynchro/v1/clientsyncdatabase/?token=ec789c7f00aa583f1efed11f10d56d68ff909dbf7b72e8cc8d35935f91868ead failed with HTTP error code: 401 - 
+[2022-02-09 22:36:40.256838] [DEBUG] Entering retry with remaining time 7.947964
+[2022-02-09 22:36:40.256900] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:40.256972] [DEBUG] Lastrun in : 1.6434099674225 seconds - rows throttle: 525 and remaining time: 6.6210751533508
+[2022-02-09 22:36:40.257052] [INFO] Database progress update: Data: 10.5MB / 10.6MB - Rows: 52,684 / 52,687
+[2022-02-09 22:36:40.265294] [INFO] New table is started: wp_users and setting new default rows per sync: 183
+[2022-02-09 22:36:40.266206] [DEBUG] Getting data from local DB with SQL query: select * from `wp_users` where `ID` > 0 order by `ID`  limit 183
+[2022-02-09 22:36:40.266767] [INFO] Marking table: wp_users as completed
+[2022-02-09 22:36:40.558639] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:40.559198] [DEBUG] Lastrun in : 0.29363703727722 seconds - rows throttle: 193 and remaining time: 6.3188610076904
+[2022-02-09 22:36:40.559557] [INFO] Database progress update: 
+[2022-02-09 22:36:40.574489] [INFO] Database progress update: 
+[2022-02-09 22:36:40.574862] [INFO] Ending database synchronization loop with remaining time: 6.3031940460205 seconds
+[2022-02-09 22:36:40.584936] [INFO] Ending sync controller loop - with remaining time: 6.2931969165802
+[2022-02-09 22:36:40.786010] [INFO] Running sync controller loop - With allotted time: 26.810883998871 seconds
+[2022-02-09 22:36:40.793315] [INFO] Ending sync controller loop - with remaining time: 26.80354809761
+[2022-02-09 22:36:40.987540] [INFO] Running sync controller loop - With allotted time: 26.816205978394 seconds
+[2022-02-09 22:36:40.990412] [INFO] Starting finalize - Remaining time: 26.813235998154
+[2022-02-09 22:36:40.991215] [INFO] Starting database finalize with remaining time: 26.812428951263
+[2022-02-09 22:36:40.991328] [INFO] Prepare SQL queries for database finalize
+[2022-02-09 22:36:40.991403] [INFO] Add sql statement to delete WP Synchro options: delete from `wpsyntmp_620441cd1f334`  where option_name like 'wpsynchro_%'
+[2022-02-09 22:36:40.991483] [INFO] Add sql statement to copy current WP Synchro options to temp table: insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+[2022-02-09 22:36:40.991545] [INFO] Add sql statement to delete active plugin setting: delete from `wpsyntmp_620441cd1f334`  where option_name = 'active_plugins'
+[2022-02-09 22:36:40.991606] [INFO] Add sql statement to copy current active plugin setting to temp table: insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+[2022-02-09 22:36:40.992038] [DEBUG] Retrieving new masterdata from target
+[2022-02-09 22:36:40.992225] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-09 22:36:41.313852] [DEBUG] Retrieving new masterdata completed
+[2022-02-09 22:36:41.318749] [DEBUG] Add drop table in database on wp_actionscheduler_actions and rename from wpsyntmp_620441cd1f193
+[2022-02-09 22:36:41.319341] [DEBUG] Add drop table in database on wp_actionscheduler_claims and rename from wpsyntmp_620441cd1f1e9
+[2022-02-09 22:36:41.319673] [DEBUG] Add drop table in database on wp_actionscheduler_groups and rename from wpsyntmp_620441cd1f207
+[2022-02-09 22:36:41.320071] [DEBUG] Add drop table in database on wp_actionscheduler_logs and rename from wpsyntmp_620441cd1f220
+[2022-02-09 22:36:41.320367] [DEBUG] Add drop table in database on wp_aioseo_cache and rename from wpsyntmp_620441cd1f23c
+[2022-02-09 22:36:41.320837] [DEBUG] Add drop table in database on wp_aioseo_notifications and rename from wpsyntmp_620441cd1f259
+[2022-02-09 22:36:41.321129] [DEBUG] Add drop table in database on wp_aioseo_posts and rename from wpsyntmp_620441cd1f283
+[2022-02-09 22:36:41.321370] [DEBUG] Add drop table in database on wp_commentmeta and rename from wpsyntmp_620441cd1f2c9
+[2022-02-09 22:36:41.321622] [DEBUG] Add drop table in database on wp_comments and rename from wpsyntmp_620441cd1f2e5
+[2022-02-09 22:36:41.321966] [DEBUG] Add drop table in database on wp_links and rename from wpsyntmp_620441cd1f310
+[2022-02-09 22:36:41.322237] [DEBUG] Add drop table in database on wp_options and rename from wpsyntmp_620441cd1f334
+[2022-02-09 22:36:41.322498] [DEBUG] Add drop table in database on wp_postmeta and rename from wpsyntmp_620441cd1f350
+[2022-02-09 22:36:41.322735] [DEBUG] Add drop table in database on wp_posts and rename from wpsyntmp_620441cd1f36b
+[2022-02-09 22:36:41.322963] [DEBUG] Add drop table in database on wp_term_relationships and rename from wpsyntmp_620441cd1f39c
+[2022-02-09 22:36:41.323190] [DEBUG] Add drop table in database on wp_term_taxonomy and rename from wpsyntmp_620441cd1f3b8
+[2022-02-09 22:36:41.323413] [DEBUG] Add drop table in database on wp_termmeta and rename from wpsyntmp_620441cd1f3e4
+[2022-02-09 22:36:41.323574] [DEBUG] Add drop table in database on wp_terms and rename from wpsyntmp_620441cd1f3ff
+[2022-02-09 22:36:41.323721] [DEBUG] Add drop table in database on wp_usermeta and rename from wpsyntmp_620441cd1f41a
+[2022-02-09 22:36:41.323861] [DEBUG] Add drop table in database on wp_users and rename from wpsyntmp_620441cd1f434
+[2022-02-09 22:36:41.324009] [DEBUG] Finalize SQL queries:
+
+Array
+(
+    [0] => Array
+        (
+            [0] => drop table if exists `wp_options`
+            [1] => rename table `wpsyntmp_620441cd1f334` to `wp_options`
+        )
+
+    [1] => Array
+        (
+            [0] => drop table if exists `wp_usermeta`
+            [1] => rename table `wpsyntmp_620441cd1f41a` to `wp_usermeta`
+        )
+
+    [2] => Array
+        (
+            [0] => drop table if exists `wp_users`
+            [1] => rename table `wpsyntmp_620441cd1f434` to `wp_users`
+        )
+
+    [3] => Array
+        (
+            [0] => drop table if exists `wp_terms`
+            [1] => rename table `wpsyntmp_620441cd1f3ff` to `wp_terms`
+        )
+
+    [4] => Array
+        (
+            [0] => drop table if exists `wp_termmeta`
+            [1] => rename table `wpsyntmp_620441cd1f3e4` to `wp_termmeta`
+        )
+
+    [5] => Array
+        (
+            [0] => drop table if exists `wp_term_taxonomy`
+            [1] => rename table `wpsyntmp_620441cd1f3b8` to `wp_term_taxonomy`
+        )
+
+    [6] => Array
+        (
+            [0] => drop table if exists `wp_term_relationships`
+            [1] => rename table `wpsyntmp_620441cd1f39c` to `wp_term_relationships`
+        )
+
+    [7] => Array
+        (
+            [0] => drop table if exists `wp_posts`
+            [1] => rename table `wpsyntmp_620441cd1f36b` to `wp_posts`
+        )
+
+    [8] => Array
+        (
+            [0] => drop table if exists `wp_postmeta`
+            [1] => rename table `wpsyntmp_620441cd1f350` to `wp_postmeta`
+        )
+
+    [9] => Array
+        (
+            [0] => drop table if exists `wp_links`
+            [1] => rename table `wpsyntmp_620441cd1f310` to `wp_links`
+        )
+
+    [10] => Array
+        (
+            [0] => drop table if exists `wp_comments`
+            [1] => rename table `wpsyntmp_620441cd1f2e5` to `wp_comments`
+        )
+
+    [11] => Array
+        (
+            [0] => drop table if exists `wp_commentmeta`
+            [1] => rename table `wpsyntmp_620441cd1f2c9` to `wp_commentmeta`
+        )
+
+    [12] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_posts`
+            [1] => rename table `wpsyntmp_620441cd1f283` to `wp_aioseo_posts`
+        )
+
+    [13] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_notifications`
+            [1] => rename table `wpsyntmp_620441cd1f259` to `wp_aioseo_notifications`
+        )
+
+    [14] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_cache`
+            [1] => rename table `wpsyntmp_620441cd1f23c` to `wp_aioseo_cache`
+        )
+
+    [15] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_logs`
+            [1] => rename table `wpsyntmp_620441cd1f220` to `wp_actionscheduler_logs`
+        )
+
+    [16] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_groups`
+            [1] => rename table `wpsyntmp_620441cd1f207` to `wp_actionscheduler_groups`
+        )
+
+    [17] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_claims`
+            [1] => rename table `wpsyntmp_620441cd1f1e9` to `wp_actionscheduler_claims`
+        )
+
+    [18] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_actions`
+            [1] => rename table `wpsyntmp_620441cd1f193` to `wp_actionscheduler_actions`
+        )
+
+    [19] => Array
+        (
+            [0] => delete from `wpsyntmp_620441cd1f334`  where option_name like 'wpsynchro_%'
+            [1] => insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+            [2] => delete from `wpsyntmp_620441cd1f334`  where option_name = 'active_plugins'
+            [3] => insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+        )
+
+)
+
+[2022-02-09 22:36:41.324219] [INFO] Done preparing SQL queries for database finalize
+[2022-02-09 22:36:41.335305] [INFO] Ending sync controller loop - with remaining time: 26.468349933624
+[2022-02-09 22:36:41.518634] [INFO] Running sync controller loop - With allotted time: 26.831014871597 seconds
+[2022-02-09 22:36:41.519823] [INFO] Starting finalize - Remaining time: 26.829782962799
+[2022-02-09 22:36:41.520911] [INFO] Starting database finalize with remaining time: 26.828691959381
+[2022-02-09 22:36:41.521030] [DEBUG] Calling remote client db service with 4 SQL statements:
+
+Array
+(
+    [0] => delete from `wpsyntmp_620441cd1f334`  where option_name like 'wpsynchro_%'
+    [1] => insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+    [2] => delete from `wpsyntmp_620441cd1f334`  where option_name = 'active_plugins'
+    [3] => insert into `wpsyntmp_620441cd1f334` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+)
+
+[2022-02-09 22:36:41.840994] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:41.849768] [INFO] Ending sync controller loop - with remaining time: 26.499864816666
+[2022-02-09 22:36:42.045913] [INFO] Running sync controller loop - With allotted time: 26.814695119858 seconds
+[2022-02-09 22:36:42.046664] [INFO] Starting finalize - Remaining time: 26.813938140869
+[2022-02-09 22:36:42.047385] [INFO] Starting database finalize with remaining time: 26.813215970993
+[2022-02-09 22:36:42.047478] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_actions`
+    [1] => rename table `wpsyntmp_620441cd1f193` to `wp_actionscheduler_actions`
+)
+
+[2022-02-09 22:36:42.354688] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:42.363291] [INFO] Ending sync controller loop - with remaining time: 26.497315168381
+[2022-02-09 22:36:42.586036] [INFO] Running sync controller loop - With allotted time: 26.786961078644 seconds
+[2022-02-09 22:36:42.587660] [INFO] Starting finalize - Remaining time: 26.785356998444
+[2022-02-09 22:36:42.589312] [INFO] Starting database finalize with remaining time: 26.783665895462
+[2022-02-09 22:36:42.589440] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_claims`
+    [1] => rename table `wpsyntmp_620441cd1f1e9` to `wp_actionscheduler_claims`
+)
+
+[2022-02-09 22:36:42.925078] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:42.931383] [INFO] Ending sync controller loop - with remaining time: 26.441601037979
+[2022-02-09 22:36:43.143588] [INFO] Running sync controller loop - With allotted time: 26.799587011337 seconds
+[2022-02-09 22:36:43.144652] [INFO] Starting finalize - Remaining time: 26.798517942429
+[2022-02-09 22:36:43.145599] [INFO] Starting database finalize with remaining time: 26.797564983368
+[2022-02-09 22:36:43.145721] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_groups`
+    [1] => rename table `wpsyntmp_620441cd1f207` to `wp_actionscheduler_groups`
+)
+
+[2022-02-09 22:36:43.435624] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:43.443679] [INFO] Ending sync controller loop - with remaining time: 26.499491930008
+[2022-02-09 22:36:43.675095] [INFO] Running sync controller loop - With allotted time: 26.778156995773 seconds
+[2022-02-09 22:36:43.676166] [INFO] Starting finalize - Remaining time: 26.777080059052
+[2022-02-09 22:36:43.677191] [INFO] Starting database finalize with remaining time: 26.776052951813
+[2022-02-09 22:36:43.677336] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_logs`
+    [1] => rename table `wpsyntmp_620441cd1f220` to `wp_actionscheduler_logs`
+)
+
+[2022-02-09 22:36:44.112086] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:44.120491] [INFO] Ending sync controller loop - with remaining time: 26.332761049271
+[2022-02-09 22:36:44.369762] [INFO] Running sync controller loop - With allotted time: 26.76137304306 seconds
+[2022-02-09 22:36:44.371507] [INFO] Starting finalize - Remaining time: 26.759613037109
+[2022-02-09 22:36:44.373529] [INFO] Starting database finalize with remaining time: 26.757587909698
+[2022-02-09 22:36:44.373686] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_cache`
+    [1] => rename table `wpsyntmp_620441cd1f23c` to `wp_aioseo_cache`
+)
+
+[2022-02-09 22:36:44.728727] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:44.740774] [INFO] Ending sync controller loop - with remaining time: 26.390346050262
+[2022-02-09 22:36:44.997708] [INFO] Running sync controller loop - With allotted time: 26.750564098358 seconds
+[2022-02-09 22:36:44.998842] [INFO] Starting finalize - Remaining time: 26.749422073364
+[2022-02-09 22:36:45.001298] [INFO] Starting database finalize with remaining time: 26.746979951859
+[2022-02-09 22:36:45.001681] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_notifications`
+    [1] => rename table `wpsyntmp_620441cd1f259` to `wp_aioseo_notifications`
+)
+
+[2022-02-09 22:36:45.356627] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:45.367275] [INFO] Ending sync controller loop - with remaining time: 26.381036996841
+[2022-02-09 22:36:45.629673] [INFO] Running sync controller loop - With allotted time: 26.751501083374 seconds
+[2022-02-09 22:36:45.630823] [INFO] Starting finalize - Remaining time: 26.750341176987
+[2022-02-09 22:36:45.631877] [INFO] Starting database finalize with remaining time: 26.749287128448
+[2022-02-09 22:36:45.632022] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_posts`
+    [1] => rename table `wpsyntmp_620441cd1f283` to `wp_aioseo_posts`
+)
+
+[2022-02-09 22:36:46.014147] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:46.025657] [INFO] Ending sync controller loop - with remaining time: 26.35551404953
+[2022-02-09 22:36:46.280364] [INFO] Running sync controller loop - With allotted time: 26.757541179657 seconds
+[2022-02-09 22:36:46.281402] [INFO] Starting finalize - Remaining time: 26.756494045258
+[2022-02-09 22:36:46.282410] [INFO] Starting database finalize with remaining time: 26.755488157272
+[2022-02-09 22:36:46.282576] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_commentmeta`
+    [1] => rename table `wpsyntmp_620441cd1f2c9` to `wp_commentmeta`
+)
+
+[2022-02-09 22:36:46.591800] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:46.602397] [INFO] Ending sync controller loop - with remaining time: 26.435512065887
+[2022-02-09 22:36:46.868426] [INFO] Running sync controller loop - With allotted time: 26.744028091431 seconds
+[2022-02-09 22:36:46.870018] [INFO] Starting finalize - Remaining time: 26.742348194122
+[2022-02-09 22:36:46.872063] [INFO] Starting database finalize with remaining time: 26.740315198898
+[2022-02-09 22:36:46.872482] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_comments`
+    [1] => rename table `wpsyntmp_620441cd1f2e5` to `wp_comments`
+)
+
+[2022-02-09 22:36:47.198965] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:47.214207] [INFO] Ending sync controller loop - with remaining time: 26.398159980774
+[2022-02-09 22:36:47.466581] [INFO] Running sync controller loop - With allotted time: 26.761713981628 seconds
+[2022-02-09 22:36:47.469480] [INFO] Starting finalize - Remaining time: 26.758779764175
+[2022-02-09 22:36:47.471458] [INFO] Starting database finalize with remaining time: 26.756833791733
+[2022-02-09 22:36:47.472203] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_links`
+    [1] => rename table `wpsyntmp_620441cd1f310` to `wp_links`
+)
+
+[2022-02-09 22:36:47.873175] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:47.880072] [INFO] Ending sync controller loop - with remaining time: 26.34818482399
+[2022-02-09 22:36:48.131459] [INFO] Running sync controller loop - With allotted time: 26.760380029678 seconds
+[2022-02-09 22:36:48.132459] [INFO] Starting finalize - Remaining time: 26.759371995926
+[2022-02-09 22:36:48.134355] [INFO] Starting database finalize with remaining time: 26.757493972778
+[2022-02-09 22:36:48.134832] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_postmeta`
+    [1] => rename table `wpsyntmp_620441cd1f350` to `wp_postmeta`
+)
+
+[2022-02-09 22:36:48.469089] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:48.481120] [INFO] Ending sync controller loop - with remaining time: 26.410717010498
+[2022-02-09 22:36:48.731584] [INFO] Running sync controller loop - With allotted time: 26.760675191879 seconds
+[2022-02-09 22:36:48.732781] [INFO] Starting finalize - Remaining time: 26.759473085403
+[2022-02-09 22:36:48.734658] [INFO] Starting database finalize with remaining time: 26.757602214813
+[2022-02-09 22:36:48.734981] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_posts`
+    [1] => rename table `wpsyntmp_620441cd1f36b` to `wp_posts`
+)
+
+[2022-02-09 22:36:49.048028] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:49.061035] [INFO] Ending sync controller loop - with remaining time: 26.431222200394
+[2022-02-09 22:36:49.318817] [INFO] Running sync controller loop - With allotted time: 26.75607419014 seconds
+[2022-02-09 22:36:49.320495] [INFO] Starting finalize - Remaining time: 26.754394054413
+[2022-02-09 22:36:49.322047] [INFO] Starting database finalize with remaining time: 26.75285410881
+[2022-02-09 22:36:49.322696] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_term_relationships`
+    [1] => rename table `wpsyntmp_620441cd1f39c` to `wp_term_relationships`
+)
+
+[2022-02-09 22:36:49.640380] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:49.651887] [INFO] Ending sync controller loop - with remaining time: 26.423032999039
+[2022-02-09 22:36:49.889875] [INFO] Running sync controller loop - With allotted time: 26.772423028946 seconds
+[2022-02-09 22:36:49.890976] [INFO] Starting finalize - Remaining time: 26.77131819725
+[2022-02-09 22:36:49.892040] [INFO] Starting database finalize with remaining time: 26.770251989365
+[2022-02-09 22:36:49.892198] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_term_taxonomy`
+    [1] => rename table `wpsyntmp_620441cd1f3b8` to `wp_term_taxonomy`
+)
+
+[2022-02-09 22:36:50.189921] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:50.202119] [INFO] Ending sync controller loop - with remaining time: 26.460180044174
+[2022-02-09 22:36:50.439096] [INFO] Running sync controller loop - With allotted time: 26.773416996002 seconds
+[2022-02-09 22:36:50.440356] [INFO] Starting finalize - Remaining time: 26.772147893906
+[2022-02-09 22:36:50.441436] [INFO] Starting database finalize with remaining time: 26.771065950394
+[2022-02-09 22:36:50.441580] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_termmeta`
+    [1] => rename table `wpsyntmp_620441cd1f3e4` to `wp_termmeta`
+)
+
+[2022-02-09 22:36:50.740470] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:50.751560] [INFO] Ending sync controller loop - with remaining time: 26.461025953293
+[2022-02-09 22:36:50.990550] [INFO] Running sync controller loop - With allotted time: 26.770294904709 seconds
+[2022-02-09 22:36:50.991780] [INFO] Starting finalize - Remaining time: 26.76904296875
+[2022-02-09 22:36:50.992916] [INFO] Starting database finalize with remaining time: 26.767903804779
+[2022-02-09 22:36:50.993064] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_terms`
+    [1] => rename table `wpsyntmp_620441cd1f3ff` to `wp_terms`
+)
+
+[2022-02-09 22:36:51.289378] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:51.301684] [INFO] Ending sync controller loop - with remaining time: 26.459192991257
+[2022-02-09 22:36:51.587369] [INFO] Running sync controller loop - With allotted time: 26.727416038513 seconds
+[2022-02-09 22:36:51.589591] [INFO] Starting finalize - Remaining time: 26.725185871124
+[2022-02-09 22:36:51.590909] [INFO] Starting database finalize with remaining time: 26.723867893219
+[2022-02-09 22:36:51.591096] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_users`
+    [1] => rename table `wpsyntmp_620441cd1f434` to `wp_users`
+)
+
+[2022-02-09 22:36:51.890372] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:51.901973] [INFO] Ending sync controller loop - with remaining time: 26.412811040878
+[2022-02-09 22:36:52.206347] [INFO] Running sync controller loop - With allotted time: 26.706181049347 seconds
+[2022-02-09 22:36:52.207717] [INFO] Starting finalize - Remaining time: 26.704802036285
+[2022-02-09 22:36:52.209077] [INFO] Starting database finalize with remaining time: 26.703443050385
+[2022-02-09 22:36:52.209253] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_usermeta`
+    [1] => rename table `wpsyntmp_620441cd1f41a` to `wp_usermeta`
+)
+
+[2022-02-09 22:36:52.525996] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:52.536432] [INFO] Ending sync controller loop - with remaining time: 26.376098155975
+[2022-02-09 22:36:52.810257] [INFO] Running sync controller loop - With allotted time: 26.737492084503 seconds
+[2022-02-09 22:36:52.811378] [INFO] Starting finalize - Remaining time: 26.736362934113
+[2022-02-09 22:36:52.812481] [INFO] Starting database finalize with remaining time: 26.735259056091
+[2022-02-09 22:36:52.812627] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_options`
+    [1] => rename table `wpsyntmp_620441cd1f334` to `wp_options`
+)
+
+[2022-02-09 22:36:53.141326] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-09 22:36:53.151998] [INFO] Ending sync controller loop - with remaining time: 26.395751953125
+[2022-02-09 22:36:53.413189] [INFO] Running sync controller loop - With allotted time: 26.750144958496 seconds
+[2022-02-09 22:36:53.414356] [INFO] Starting finalize - Remaining time: 26.748965024948
+[2022-02-09 22:36:53.415493] [INFO] Starting database finalize with remaining time: 26.747825860977
+[2022-02-09 22:36:53.416600] [DEBUG] Retrieving new masterdata from target
+[2022-02-09 22:36:53.417403] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-09 22:36:54.044047] [DEBUG] Retrieving new masterdata completed
+[2022-02-09 22:36:54.044264] [DEBUG] No excess temp tables to delete
+[2022-02-09 22:36:54.053597] [INFO] Ending sync controller loop - with remaining time: 26.109733819962
+[2022-02-09 22:36:54.303620] [INFO] Running sync controller loop - With allotted time: 26.760552883148 seconds
+[2022-02-09 22:36:54.305858] [INFO] Starting finalize - Remaining time: 26.758306980133
+[2022-02-09 22:36:54.306915] [INFO] Starting database finalize with remaining time: 26.757247924805
+[2022-02-09 22:36:54.307457] [DEBUG] Retrieving new masterdata from target
+[2022-02-09 22:36:54.307725] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-09 22:36:54.611478] [DEBUG] Retrieving new masterdata completed
+[2022-02-09 22:36:54.620746] [INFO] Ending sync controller loop - with remaining time: 26.443424940109
+[2022-02-09 22:36:54.874441] [INFO] Running sync controller loop - With allotted time: 26.754515886307 seconds
+[2022-02-09 22:36:54.875526] [INFO] Starting finalize - Remaining time: 26.753423929214
+[2022-02-09 22:36:54.875668] [INFO] Completed finalize - remaining time: 26.753278970718
+[2022-02-09 22:36:54.875770] [INFO] Execute last actions on target - remaining time: 26.753176927567
+[2022-02-09 22:36:55.196016] [INFO] Completed last actions on target - remaining time: 26.432934999466
+[2022-02-09 22:36:55.214015] [INFO] Ending sync controller loop - with remaining time: 26.414937019348

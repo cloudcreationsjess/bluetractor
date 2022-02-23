@@ -1,0 +1,850 @@
+[2022-02-10 19:50:08.478567] [INFO] Running sync controller loop - With allotted time: 26.800250053406 seconds
+[2022-02-10 19:50:08.482478] [INFO] Initating with remote and local host with remaining time:26.79633307457
+[2022-02-10 19:50:08.488334] [DEBUG] Calling initate remote service with url: http://bluetractor.test
+[2022-02-10 19:50:08.688910] [DEBUG] Got initiate token: aad23db11139289c7e169bfe9d862f04aa626ae0fa07975d233f00dd4d745e94
+[2022-02-10 19:50:08.689250] [DEBUG] Calling initate remote service with url: https://bluetractor.stealthmedia.com
+[2022-02-10 19:50:12.024640] [DEBUG] Got initiate token: 46315155afb9400c5fd01e936e9e2c8a7bdfca2aa43c8a206d36f4629b894cbf
+[2022-02-10 19:50:12.028939] [INFO] Initation completed on: 3.5464599132538 seconds
+[2022-02-10 19:50:12.033485] [INFO] Ending sync controller loop - with remaining time: 23.245331048965
+[2022-02-10 19:50:12.216287] [INFO] Running sync controller loop - With allotted time: 26.826284170151 seconds
+[2022-02-10 19:50:12.220928] [INFO] Getting masterdata from source and target with remaining time:26.821640014648
+[2022-02-10 19:50:12.222002] [DEBUG] Calling masterdata service on: http://bluetractor.test with intent to user as 'from'
+[2022-02-10 19:50:12.487572] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-10 19:50:13.243648] [INFO] Completed masterdata on: 1.0227148532867 seconds
+[2022-02-10 19:50:13.255739] [INFO] Ending sync controller loop - with remaining time: 25.786839008331
+[2022-02-10 19:50:13.425168] [INFO] Running sync controller loop - With allotted time: 26.840628147125 seconds
+[2022-02-10 19:50:13.430345] [INFO] Ending sync controller loop - with remaining time: 26.835446119308
+[2022-02-10 19:50:13.608883] [INFO] Running sync controller loop - With allotted time: 26.829375982285 seconds
+[2022-02-10 19:50:13.611735] [INFO] Starting database synchronization loop with remaining time: 26.826518058777
+[2022-02-10 19:50:13.611864] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => https:\/\/bluetractor.stealthmedia.com
+            [from] => http:\/\/bluetractor.test
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => https%3A%2F%2Fbluetractor.stealthmedia.com
+            [from] => http%3A%2F%2Fbluetractor.test
+        )
+
+    [3] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test/wp
+        )
+
+    [4] => stdClass Object
+        (
+            [to] => /home/customer/www/bluetractor.stealthmedia.com/releases/20211129214954/web
+            [from] => C:/laragon/www/bluetractor/web
+        )
+
+)
+
+[2022-02-10 19:50:15.651982] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:15.652213] [INFO] New table is started: wp_actionscheduler_actions and setting new default rows per sync: 500
+[2022-02-10 19:50:15.652920] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_actions` where `action_id` > 0 order by `action_id`  limit 500
+[2022-02-10 19:50:15.653234] [INFO] Marking table: wp_actionscheduler_actions as completed
+[2022-02-10 19:50:15.947889] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:15.948112] [DEBUG] Lastrun in : 0.29580307006836 seconds - rows throttle: 525 and remaining time: 24.490135908127
+[2022-02-10 19:50:15.948249] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 24 / 52,883
+[2022-02-10 19:50:15.957935] [INFO] New table is started: wp_actionscheduler_claims and setting new default rows per sync: 500
+[2022-02-10 19:50:15.958642] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_claims` where `claim_id` > 0 order by `claim_id`  limit 500
+[2022-02-10 19:50:15.958783] [INFO] Marking table: wp_actionscheduler_claims as completed
+[2022-02-10 19:50:15.958884] [DEBUG] Lastrun in : 0.0006718635559082 seconds - rows throttle: 525 and remaining time: 24.479363918304
+[2022-02-10 19:50:15.958973] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 24 / 52,883
+[2022-02-10 19:50:15.965509] [INFO] New table is started: wp_actionscheduler_groups and setting new default rows per sync: 122
+[2022-02-10 19:50:15.966144] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_groups` where `group_id` > 0 order by `group_id`  limit 122
+[2022-02-10 19:50:15.966299] [INFO] Marking table: wp_actionscheduler_groups as completed
+[2022-02-10 19:50:16.264542] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:16.265046] [DEBUG] Lastrun in : 0.29931092262268 seconds - rows throttle: 129 and remaining time: 24.17320895195
+[2022-02-10 19:50:16.265357] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 26 / 52,883
+[2022-02-10 19:50:16.275365] [INFO] New table is started: wp_actionscheduler_logs and setting new default rows per sync: 500
+[2022-02-10 19:50:16.276298] [DEBUG] Getting data from local DB with SQL query: select * from `wp_actionscheduler_logs` where `log_id` > 0 order by `log_id`  limit 500
+[2022-02-10 19:50:16.276425] [INFO] Marking table: wp_actionscheduler_logs as completed
+[2022-02-10 19:50:16.552928] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:16.553449] [DEBUG] Lastrun in : 0.27778100967407 seconds - rows throttle: 525 and remaining time: 23.884804010391
+[2022-02-10 19:50:16.553765] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 94 / 52,883
+[2022-02-10 19:50:16.562759] [INFO] New table is started: wp_aioseo_cache and setting new default rows per sync: 50
+[2022-02-10 19:50:16.563467] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_cache` where `id` > 0 order by `id`  limit 50
+[2022-02-10 19:50:16.563625] [INFO] Marking table: wp_aioseo_cache as completed
+[2022-02-10 19:50:16.918476] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:16.918863] [DEBUG] Lastrun in : 0.35587596893311 seconds - rows throttle: 53 and remaining time: 23.519388914108
+[2022-02-10 19:50:16.919093] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 99 / 52,883
+[2022-02-10 19:50:16.931027] [INFO] New table is started: wp_aioseo_notifications and setting new default rows per sync: 183
+[2022-02-10 19:50:16.931836] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_notifications` where `id` > 0 order by `id`  limit 183
+[2022-02-10 19:50:16.931988] [INFO] Marking table: wp_aioseo_notifications as completed
+[2022-02-10 19:50:17.235805] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:17.236329] [DEBUG] Lastrun in : 0.30503702163696 seconds - rows throttle: 193 and remaining time: 23.201925039291
+[2022-02-10 19:50:17.236569] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 102 / 52,883
+[2022-02-10 19:50:17.248954] [INFO] New table is started: wp_aioseo_posts and setting new default rows per sync: 153
+[2022-02-10 19:50:17.250945] [DEBUG] Getting data from local DB with SQL query: select * from `wp_aioseo_posts` where `id` > 0 order by `id`  limit 153
+[2022-02-10 19:50:17.251167] [INFO] Marking table: wp_aioseo_posts as completed
+[2022-02-10 19:50:17.641717] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:17.642198] [DEBUG] Lastrun in : 0.39295101165771 seconds - rows throttle: 161 and remaining time: 22.796055078506
+[2022-02-10 19:50:17.642482] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 217 / 52,883
+[2022-02-10 19:50:17.653443] [INFO] New table is started: wp_commentmeta and setting new default rows per sync: 500
+[2022-02-10 19:50:17.655119] [DEBUG] Getting data from local DB with SQL query: select * from `wp_commentmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-10 19:50:17.655419] [INFO] Marking table: wp_commentmeta as completed
+[2022-02-10 19:50:17.655619] [DEBUG] Lastrun in : 0.0019481182098389 seconds - rows throttle: 525 and remaining time: 22.782632112503
+[2022-02-10 19:50:17.655854] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 217 / 52,883
+[2022-02-10 19:50:17.663836] [INFO] New table is started: wp_comments and setting new default rows per sync: 500
+[2022-02-10 19:50:17.664467] [DEBUG] Getting data from local DB with SQL query: select * from `wp_comments` where `comment_ID` > 0 order by `comment_ID`  limit 500
+[2022-02-10 19:50:17.664591] [INFO] Marking table: wp_comments as completed
+[2022-02-10 19:50:17.664680] [DEBUG] Lastrun in : 0.00065898895263672 seconds - rows throttle: 525 and remaining time: 22.773567914963
+[2022-02-10 19:50:17.664785] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 217 / 52,883
+[2022-02-10 19:50:17.670996] [INFO] New table is started: wp_links and setting new default rows per sync: 500
+[2022-02-10 19:50:17.672283] [DEBUG] Getting data from local DB with SQL query: select * from `wp_links` where `link_id` > 0 order by `link_id`  limit 500
+[2022-02-10 19:50:17.672511] [INFO] Marking table: wp_links as completed
+[2022-02-10 19:50:17.672671] [DEBUG] Lastrun in : 0.0014750957489014 seconds - rows throttle: 525 and remaining time: 22.765577077866
+[2022-02-10 19:50:17.672781] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 217 / 52,883
+[2022-02-10 19:50:17.679207] [INFO] New table is started: wp_options and setting new default rows per sync: 40
+[2022-02-10 19:50:17.679889] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 0 order by `option_id`  limit 40
+[2022-02-10 19:50:17.952034] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:17.952330] [DEBUG] Lastrun in : 0.27294111251831 seconds - rows throttle: 42 and remaining time: 22.485918998718
+[2022-02-10 19:50:17.952439] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 257 / 52,883
+[2022-02-10 19:50:17.963540] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 43 order by `option_id`  limit 42
+[2022-02-10 19:50:18.246757] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:18.247106] [DEBUG] Lastrun in : 0.28408312797546 seconds - rows throttle: 45 and remaining time: 22.191144943237
+[2022-02-10 19:50:18.247320] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 299 / 52,883
+[2022-02-10 19:50:18.260186] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 85 order by `option_id`  limit 45
+[2022-02-10 19:50:18.595396] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:18.595769] [DEBUG] Lastrun in : 0.33602285385132 seconds - rows throttle: 48 and remaining time: 21.842483043671
+[2022-02-10 19:50:18.595989] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 344 / 52,883
+[2022-02-10 19:50:18.608496] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 149 order by `option_id`  limit 48
+[2022-02-10 19:50:19.111073] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:19.111610] [DEBUG] Lastrun in : 0.50518918037415 seconds - rows throttle: 51 and remaining time: 21.326644897461
+[2022-02-10 19:50:19.111921] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 392 / 52,883
+[2022-02-10 19:50:19.128803] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 1268 order by `option_id`  limit 51
+[2022-02-10 19:50:19.129051] [INFO] Marking table: wp_options as completed
+[2022-02-10 19:50:20.548771] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:20.549142] [DEBUG] Lastrun in : 1.4267559051514 seconds - rows throttle: 54 and remaining time: 19.889108896255
+[2022-02-10 19:50:20.549288] [INFO] Database progress update: Data: 0.0MB / 11.7MB - Rows: 434 / 52,883
+[2022-02-10 19:50:20.556025] [INFO] New table is started: wp_postmeta and setting new default rows per sync: 500
+[2022-02-10 19:50:20.557658] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-10 19:50:20.873536] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:20.873869] [DEBUG] Lastrun in : 0.31761813163757 seconds - rows throttle: 525 and remaining time: 19.564381122589
+[2022-02-10 19:50:20.873996] [INFO] Database progress update: Data: 0.1MB / 11.7MB - Rows: 934 / 52,883
+[2022-02-10 19:50:20.881803] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 587 order by `meta_id`  limit 525
+[2022-02-10 19:50:21.300465] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:21.300723] [DEBUG] Lastrun in : 0.42016887664795 seconds - rows throttle: 552 and remaining time: 19.137527942657
+[2022-02-10 19:50:21.300858] [INFO] Database progress update: Data: 0.2MB / 11.7MB - Rows: 1,459 / 52,883
+[2022-02-10 19:50:21.312584] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 1180 order by `meta_id`  limit 552
+[2022-02-10 19:50:21.651827] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:21.652064] [DEBUG] Lastrun in : 0.34130811691284 seconds - rows throttle: 580 and remaining time: 18.786185979843
+[2022-02-10 19:50:21.652171] [INFO] Database progress update: Data: 0.4MB / 11.7MB - Rows: 2,011 / 52,883
+[2022-02-10 19:50:21.664727] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 1756 order by `meta_id`  limit 580
+[2022-02-10 19:50:22.039388] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:22.040931] [DEBUG] Lastrun in : 0.3776159286499 seconds - rows throttle: 609 and remaining time: 18.397324085236
+[2022-02-10 19:50:22.041275] [INFO] Database progress update: Data: 0.5MB / 11.7MB - Rows: 2,591 / 52,883
+[2022-02-10 19:50:22.051411] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 2380 order by `meta_id`  limit 609
+[2022-02-10 19:50:22.376522] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:22.376927] [DEBUG] Lastrun in : 0.32721400260925 seconds - rows throttle: 640 and remaining time: 18.061325073242
+[2022-02-10 19:50:22.377171] [INFO] Database progress update: Data: 0.7MB / 11.7MB - Rows: 3,200 / 52,883
+[2022-02-10 19:50:22.391454] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 3105 order by `meta_id`  limit 640
+[2022-02-10 19:50:22.758968] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:22.759326] [DEBUG] Lastrun in : 0.37078785896301 seconds - rows throttle: 672 and remaining time: 17.678925037384
+[2022-02-10 19:50:22.759524] [INFO] Database progress update: Data: 0.8MB / 11.7MB - Rows: 3,840 / 52,883
+[2022-02-10 19:50:22.771622] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 3763 order by `meta_id`  limit 672
+[2022-02-10 19:50:23.254509] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:23.255208] [DEBUG] Lastrun in : 0.48584198951721 seconds - rows throttle: 706 and remaining time: 17.183048963547
+[2022-02-10 19:50:23.255545] [INFO] Database progress update: Data: 0.9MB / 11.7MB - Rows: 4,512 / 52,883
+[2022-02-10 19:50:23.265674] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 4489 order by `meta_id`  limit 706
+[2022-02-10 19:50:23.683065] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:23.683511] [DEBUG] Lastrun in : 0.41975903511047 seconds - rows throttle: 742 and remaining time: 16.75474190712
+[2022-02-10 19:50:23.683760] [INFO] Database progress update: Data: 1.1MB / 11.7MB - Rows: 5,218 / 52,883
+[2022-02-10 19:50:23.698297] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 5281 order by `meta_id`  limit 742
+[2022-02-10 19:50:23.991106] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:23.991398] [DEBUG] Lastrun in : 0.29481887817383 seconds - rows throttle: 780 and remaining time: 16.446851015091
+[2022-02-10 19:50:23.991535] [INFO] Database progress update: Data: 1.3MB / 11.7MB - Rows: 5,960 / 52,883
+[2022-02-10 19:50:23.999016] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 6023 order by `meta_id`  limit 780
+[2022-02-10 19:50:24.374609] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:24.374919] [DEBUG] Lastrun in : 0.37777400016785 seconds - rows throttle: 819 and remaining time: 16.063331127167
+[2022-02-10 19:50:24.375064] [INFO] Database progress update: Data: 1.4MB / 11.7MB - Rows: 6,740 / 52,883
+[2022-02-10 19:50:24.388840] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 6803 order by `meta_id`  limit 819
+[2022-02-10 19:50:24.693871] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:24.694135] [DEBUG] Lastrun in : 0.30859208106995 seconds - rows throttle: 860 and remaining time: 15.744116067886
+[2022-02-10 19:50:24.694323] [INFO] Database progress update: Data: 1.6MB / 11.7MB - Rows: 7,559 / 52,883
+[2022-02-10 19:50:24.703769] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 7628 order by `meta_id`  limit 860
+[2022-02-10 19:50:25.021090] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:25.021555] [DEBUG] Lastrun in : 0.32028698921204 seconds - rows throttle: 903 and remaining time: 15.416696071625
+[2022-02-10 19:50:25.021762] [INFO] Database progress update: Data: 1.8MB / 11.7MB - Rows: 8,419 / 52,883
+[2022-02-10 19:50:25.034725] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 8498 order by `meta_id`  limit 903
+[2022-02-10 19:50:25.349910] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:25.350209] [DEBUG] Lastrun in : 0.31746506690979 seconds - rows throttle: 949 and remaining time: 15.088041067123
+[2022-02-10 19:50:25.350355] [INFO] Database progress update: Data: 2.0MB / 11.7MB - Rows: 9,322 / 52,883
+[2022-02-10 19:50:25.362501] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 9475 order by `meta_id`  limit 949
+[2022-02-10 19:50:25.677519] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:25.677767] [DEBUG] Lastrun in : 0.317458152771 seconds - rows throttle: 997 and remaining time: 14.76048207283
+[2022-02-10 19:50:25.677892] [INFO] Database progress update: Data: 2.2MB / 11.7MB - Rows: 10,271 / 52,883
+[2022-02-10 19:50:25.690932] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 10572 order by `meta_id`  limit 997
+[2022-02-10 19:50:25.977337] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:25.977691] [DEBUG] Lastrun in : 0.29127812385559 seconds - rows throttle: 1047 and remaining time: 14.460559129715
+[2022-02-10 19:50:25.977838] [INFO] Database progress update: Data: 2.5MB / 11.7MB - Rows: 11,268 / 52,883
+[2022-02-10 19:50:25.986272] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 11569 order by `meta_id`  limit 1047
+[2022-02-10 19:50:26.284164] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:26.573248] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:26.573793] [DEBUG] Lastrun in : 0.58969902992249 seconds - rows throttle: 1100 and remaining time: 13.864461898804
+[2022-02-10 19:50:26.574402] [INFO] Database progress update: Data: 2.7MB / 11.7MB - Rows: 12,315 / 52,883
+[2022-02-10 19:50:26.590585] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 12644 order by `meta_id`  limit 1100
+[2022-02-10 19:50:26.936386] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:27.209238] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:27.209503] [DEBUG] Lastrun in : 0.6233389377594 seconds - rows throttle: 1155 and remaining time: 13.22874712944
+[2022-02-10 19:50:27.209627] [INFO] Database progress update: Data: 2.9MB / 11.7MB - Rows: 13,415 / 52,883
+[2022-02-10 19:50:27.222330] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 13752 order by `meta_id`  limit 1155
+[2022-02-10 19:50:27.545503] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:27.836886] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:27.837111] [DEBUG] Lastrun in : 0.61772298812866 seconds - rows throttle: 1213 and remaining time: 12.601138114929
+[2022-02-10 19:50:27.837274] [INFO] Database progress update: Data: 3.2MB / 11.7MB - Rows: 14,570 / 52,883
+[2022-02-10 19:50:27.850521] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 14929 order by `meta_id`  limit 1213
+[2022-02-10 19:50:28.177051] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:28.477859] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:28.478211] [DEBUG] Lastrun in : 0.63070201873779 seconds - rows throttle: 1274 and remaining time: 11.960037946701
+[2022-02-10 19:50:28.478323] [INFO] Database progress update: Data: 3.4MB / 11.7MB - Rows: 15,783 / 52,883
+[2022-02-10 19:50:28.493192] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 16188 order by `meta_id`  limit 1274
+[2022-02-10 19:50:28.810479] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:29.130606] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:29.131086] [DEBUG] Lastrun in : 0.64344906806946 seconds - rows throttle: 1338 and remaining time: 11.307174921036
+[2022-02-10 19:50:29.131306] [INFO] Database progress update: Data: 3.7MB / 11.7MB - Rows: 17,057 / 52,883
+[2022-02-10 19:50:29.145161] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 17464 order by `meta_id`  limit 1338
+[2022-02-10 19:50:29.567476] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:29.855617] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:29.856057] [DEBUG] Lastrun in : 0.715008020401 seconds - rows throttle: 1405 and remaining time: 10.582195043564
+[2022-02-10 19:50:29.856249] [INFO] Database progress update: Data: 4.0MB / 11.7MB - Rows: 18,395 / 52,883
+[2022-02-10 19:50:29.874761] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 18816 order by `meta_id`  limit 1405
+[2022-02-10 19:50:30.227353] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:30.535662] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:30.535961] [DEBUG] Lastrun in : 0.66708302497864 seconds - rows throttle: 1476 and remaining time: 9.9022901058197
+[2022-02-10 19:50:30.536152] [INFO] Database progress update: Data: 4.3MB / 11.7MB - Rows: 19,800 / 52,883
+[2022-02-10 19:50:30.546984] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 20221 order by `meta_id`  limit 1476
+[2022-02-10 19:50:31.200566] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:31.482343] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:31.482657] [DEBUG] Lastrun in : 0.93855500221252 seconds - rows throttle: 1550 and remaining time: 8.9555940628052
+[2022-02-10 19:50:31.482837] [INFO] Database progress update: Data: 4.7MB / 11.7MB - Rows: 21,276 / 52,883
+[2022-02-10 19:50:31.495567] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 21879 order by `meta_id`  limit 1550
+[2022-02-10 19:50:31.910079] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:32.209311] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:32.209520] [DEBUG] Lastrun in : 0.71694111824036 seconds - rows throttle: 1628 and remaining time: 8.2287290096283
+[2022-02-10 19:50:32.209623] [INFO] Database progress update: Data: 5.0MB / 11.7MB - Rows: 22,826 / 52,883
+[2022-02-10 19:50:32.224266] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 23429 order by `meta_id`  limit 1628
+[2022-02-10 19:50:32.582393] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:32.900871] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:32.901243] [DEBUG] Lastrun in : 0.68193578720093 seconds - rows throttle: 1710 and remaining time: 7.5370080471039
+[2022-02-10 19:50:32.901429] [INFO] Database progress update: Data: 5.4MB / 11.7MB - Rows: 24,454 / 52,883
+[2022-02-10 19:50:32.918216] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 25080 order by `meta_id`  limit 1710
+[2022-02-10 19:50:33.374686] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:33.678421] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:33.679008] [DEBUG] Lastrun in : 0.76421403884888 seconds - rows throttle: 1796 and remaining time: 6.7592489719391
+[2022-02-10 19:50:33.679376] [INFO] Database progress update: Data: 5.7MB / 11.7MB - Rows: 26,164 / 52,883
+[2022-02-10 19:50:33.691771] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 26821 order by `meta_id`  limit 1796
+[2022-02-10 19:50:34.053648] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:34.346169] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:34.346410] [DEBUG] Lastrun in : 0.65961813926697 seconds - rows throttle: 1886 and remaining time: 6.0918390750885
+[2022-02-10 19:50:34.346510] [INFO] Database progress update: Data: 6.1MB / 11.7MB - Rows: 27,960 / 52,883
+[2022-02-10 19:50:34.362516] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 28674 order by `meta_id`  limit 1886
+[2022-02-10 19:50:34.702597] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:35.011698] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:35.012033] [DEBUG] Lastrun in : 0.65479397773743 seconds - rows throttle: 1981 and remaining time: 5.4262189865112
+[2022-02-10 19:50:35.012224] [INFO] Database progress update: Data: 6.5MB / 11.7MB - Rows: 29,846 / 52,883
+[2022-02-10 19:50:35.027361] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 30630 order by `meta_id`  limit 1981
+[2022-02-10 19:50:35.377604] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:35.845210] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:35.845553] [DEBUG] Lastrun in : 0.82320284843445 seconds - rows throttle: 2081 and remaining time: 4.592700958252
+[2022-02-10 19:50:35.845802] [INFO] Database progress update: Data: 7.0MB / 11.7MB - Rows: 31,827 / 52,883
+[2022-02-10 19:50:35.861634] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 32649 order by `meta_id`  limit 2081
+[2022-02-10 19:50:36.211791] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:36.553314] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:36.827516] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:36.827865] [DEBUG] Lastrun in : 0.97105598449707 seconds - rows throttle: 2186 and remaining time: 3.6103849411011
+[2022-02-10 19:50:36.827993] [INFO] Database progress update: Data: 7.5MB / 11.7MB - Rows: 33,908 / 52,883
+[2022-02-10 19:50:36.845038] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 34734 order by `meta_id`  limit 2186
+[2022-02-10 19:50:37.147285] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:37.463594] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:37.803179] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:37.803680] [DEBUG] Lastrun in : 0.9664580821991 seconds - rows throttle: 2296 and remaining time: 2.6345739364624
+[2022-02-10 19:50:37.804091] [INFO] Database progress update: Data: 7.9MB / 11.7MB - Rows: 36,094 / 52,883
+[2022-02-10 19:50:37.821296] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 37282 order by `meta_id`  limit 2296
+[2022-02-10 19:50:38.201140] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:38.547551] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:38.859731] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:38.860066] [DEBUG] Lastrun in : 1.0435039997101 seconds - rows throttle: 2411 and remaining time: 1.5781841278076
+[2022-02-10 19:50:38.860236] [INFO] Database progress update: Data: 8.4MB / 11.7MB - Rows: 38,390 / 52,883
+[2022-02-10 19:50:38.875977] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 39794 order by `meta_id`  limit 2411
+[2022-02-10 19:50:39.165278] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:39.493726] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:39.788615] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:39.788996] [DEBUG] Lastrun in : 0.91948080062866 seconds - rows throttle: 2532 and remaining time: 0.64925408363342
+[2022-02-10 19:50:39.789137] [INFO] Database progress update: Data: 9.0MB / 11.7MB - Rows: 40,801 / 52,883
+[2022-02-10 19:50:39.800336] [INFO] Ending database synchronization loop with remaining time: 0.63792395591736 seconds
+[2022-02-10 19:50:39.807525] [INFO] Ending sync controller loop - with remaining time: 0.63073396682739
+[2022-02-10 19:50:39.976927] [INFO] Running sync controller loop - With allotted time: 26.840543031693 seconds
+[2022-02-10 19:50:39.977883] [INFO] Starting database synchronization loop with remaining time: 26.839567899704
+[2022-02-10 19:50:39.977990] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => https:\/\/bluetractor.stealthmedia.com
+            [from] => http:\/\/bluetractor.test
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => https%3A%2F%2Fbluetractor.stealthmedia.com
+            [from] => http%3A%2F%2Fbluetractor.test
+        )
+
+    [3] => stdClass Object
+        (
+            [to] => https://bluetractor.stealthmedia.com
+            [from] => http://bluetractor.test/wp
+        )
+
+    [4] => stdClass Object
+        (
+            [to] => /home/customer/www/bluetractor.stealthmedia.com/releases/20211129214954/web
+            [from] => C:/laragon/www/bluetractor/web
+        )
+
+)
+
+[2022-02-10 19:50:39.981923] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 42206 order by `meta_id`  limit 2532
+[2022-02-10 19:50:40.379784] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:40.737913] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:41.025717] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:41.026004] [DEBUG] Lastrun in : 1.0478971004486 seconds - rows throttle: 2659 and remaining time: 25.791445016861
+[2022-02-10 19:50:41.026148] [INFO] Database progress update: Data: 9.5MB / 11.7MB - Rows: 43,333 / 52,883
+[2022-02-10 19:50:41.039772] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 44790 order by `meta_id`  limit 2659
+[2022-02-10 19:50:41.415784] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:41.776179] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:42.128348] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:42.128664] [DEBUG] Lastrun in : 1.0938489437103 seconds - rows throttle: 2792 and remaining time: 24.68878698349
+[2022-02-10 19:50:42.128791] [INFO] Database progress update: Data: 10.0MB / 11.7MB - Rows: 45,992 / 52,883
+[2022-02-10 19:50:42.142593] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 47449 order by `meta_id`  limit 2792
+[2022-02-10 19:50:42.532309] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:42.877016] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:43.177016] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:43.177363] [DEBUG] Lastrun in : 1.0400178432465 seconds - rows throttle: 2932 and remaining time: 23.640086889267
+[2022-02-10 19:50:43.177520] [INFO] Database progress update: Data: 10.7MB / 11.7MB - Rows: 48,784 / 52,883
+[2022-02-10 19:50:43.192317] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 50241 order by `meta_id`  limit 2932
+[2022-02-10 19:50:43.609013] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:43.961228] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:44.328058] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:44.328474] [DEBUG] Lastrun in : 1.1427230834961 seconds - rows throttle: 3079 and remaining time: 22.488979101181
+[2022-02-10 19:50:44.328711] [INFO] Database progress update: Data: 11.3MB / 11.7MB - Rows: 51,716 / 52,883
+[2022-02-10 19:50:44.343073] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 53178 order by `meta_id`  limit 3079
+[2022-02-10 19:50:44.343393] [INFO] Marking table: wp_postmeta as completed
+[2022-02-10 19:50:44.644504] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:44.644758] [DEBUG] Lastrun in : 0.30502486228943 seconds - rows throttle: 3233 and remaining time: 22.172689914703
+[2022-02-10 19:50:44.644915] [INFO] Database progress update: Data: 11.4MB / 11.7MB - Rows: 52,206 / 52,883
+[2022-02-10 19:50:44.653701] [INFO] New table is started: wp_posts and setting new default rows per sync: 500
+[2022-02-10 19:50:44.658224] [DEBUG] Getting data from local DB with SQL query: select * from `wp_posts` where `ID` > 0 order by `ID`  limit 500
+[2022-02-10 19:50:45.037113] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:45.037368] [DEBUG] Lastrun in : 0.383455991745 seconds - rows throttle: 525 and remaining time: 21.780081987381
+[2022-02-10 19:50:45.037519] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,706 / 52,883
+[2022-02-10 19:50:45.046818] [DEBUG] Getting data from local DB with SQL query: select * from `wp_posts` where `ID` > 641 order by `ID`  limit 525
+[2022-02-10 19:50:45.047031] [INFO] Marking table: wp_posts as completed
+[2022-02-10 19:50:45.345104] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:45.345478] [DEBUG] Lastrun in : 0.29950404167175 seconds - rows throttle: 552 and remaining time: 21.471971988678
+[2022-02-10 19:50:45.345608] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,780 / 52,883
+[2022-02-10 19:50:45.355735] [INFO] New table is started: wp_term_relationships and setting new default rows per sync: 500
+[2022-02-10 19:50:45.357112] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_relationships` limit 0,500
+[2022-02-10 19:50:45.357772] [INFO] Marking table: wp_term_relationships as completed
+[2022-02-10 19:50:45.624772] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:45.625085] [DEBUG] Lastrun in : 0.26896286010742 seconds - rows throttle: 525 and remaining time: 21.192365884781
+[2022-02-10 19:50:45.625252] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,804 / 52,883
+[2022-02-10 19:50:45.634887] [INFO] New table is started: wp_term_taxonomy and setting new default rows per sync: 244
+[2022-02-10 19:50:45.635486] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_taxonomy` where `term_taxonomy_id` > 0 order by `term_taxonomy_id`  limit 244
+[2022-02-10 19:50:45.635608] [INFO] Marking table: wp_term_taxonomy as completed
+[2022-02-10 19:50:45.920870] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:45.921288] [DEBUG] Lastrun in : 0.28621506690979 seconds - rows throttle: 257 and remaining time: 20.89616894722
+[2022-02-10 19:50:45.921579] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,808 / 52,883
+[2022-02-10 19:50:45.932836] [INFO] New table is started: wp_termmeta and setting new default rows per sync: 500
+[2022-02-10 19:50:45.933561] [DEBUG] Getting data from local DB with SQL query: select * from `wp_termmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2022-02-10 19:50:45.933678] [INFO] Marking table: wp_termmeta as completed
+[2022-02-10 19:50:45.933754] [DEBUG] Lastrun in : 0.00067901611328125 seconds - rows throttle: 525 and remaining time: 20.883693933487
+[2022-02-10 19:50:45.933901] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,808 / 52,883
+[2022-02-10 19:50:45.939266] [INFO] New table is started: wp_terms and setting new default rows per sync: 244
+[2022-02-10 19:50:45.941281] [DEBUG] Getting data from local DB with SQL query: select * from `wp_terms` where `term_id` > 0 order by `term_id`  limit 244
+[2022-02-10 19:50:45.941529] [INFO] Marking table: wp_terms as completed
+[2022-02-10 19:50:46.227991] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:46.228295] [DEBUG] Lastrun in : 0.28853607177734 seconds - rows throttle: 257 and remaining time: 20.589158058167
+[2022-02-10 19:50:46.228416] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,812 / 52,883
+[2022-02-10 19:50:46.238407] [INFO] New table is started: wp_usermeta and setting new default rows per sync: 500
+[2022-02-10 19:50:46.239982] [DEBUG] Getting data from local DB with SQL query: select * from `wp_usermeta` where `umeta_id` > 0 order by `umeta_id`  limit 500
+[2022-02-10 19:50:46.240912] [INFO] Marking table: wp_usermeta as completed
+[2022-02-10 19:50:46.508292] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:46.508616] [DEBUG] Lastrun in : 0.26985502243042 seconds - rows throttle: 525 and remaining time: 20.308834075928
+[2022-02-10 19:50:46.508828] [INFO] Database progress update: Data: 11.6MB / 11.7MB - Rows: 52,880 / 52,883
+[2022-02-10 19:50:46.518667] [INFO] New table is started: wp_users and setting new default rows per sync: 183
+[2022-02-10 19:50:46.519477] [DEBUG] Getting data from local DB with SQL query: select * from `wp_users` where `ID` > 0 order by `ID`  limit 183
+[2022-02-10 19:50:46.519598] [INFO] Marking table: wp_users as completed
+[2022-02-10 19:50:46.783764] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:46.784009] [DEBUG] Lastrun in : 0.26507997512817 seconds - rows throttle: 193 and remaining time: 20.033439874649
+[2022-02-10 19:50:46.784111] [INFO] Database progress update: 
+[2022-02-10 19:50:46.794771] [INFO] Database progress update: 
+[2022-02-10 19:50:46.795026] [INFO] Ending database synchronization loop with remaining time: 20.022424936295 seconds
+[2022-02-10 19:50:46.802388] [INFO] Ending sync controller loop - with remaining time: 20.015067100525
+[2022-02-10 19:50:46.990645] [INFO] Running sync controller loop - With allotted time: 26.824630975723 seconds
+[2022-02-10 19:50:46.997434] [INFO] Ending sync controller loop - with remaining time: 26.817762851715
+[2022-02-10 19:50:47.180113] [INFO] Running sync controller loop - With allotted time: 26.82367181778 seconds
+[2022-02-10 19:50:47.185246] [INFO] Starting finalize - Remaining time: 26.81852889061
+[2022-02-10 19:50:47.185933] [INFO] Starting database finalize with remaining time: 26.817838907242
+[2022-02-10 19:50:47.186022] [INFO] Prepare SQL queries for database finalize
+[2022-02-10 19:50:47.186089] [INFO] Add sql statement to delete WP Synchro options: delete from `wpsyntmp_62056c759579d`  where option_name like 'wpsynchro_%'
+[2022-02-10 19:50:47.186154] [INFO] Add sql statement to copy current WP Synchro options to temp table: insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+[2022-02-10 19:50:47.186224] [INFO] Add sql statement to delete active plugin setting: delete from `wpsyntmp_62056c759579d`  where option_name = 'active_plugins'
+[2022-02-10 19:50:47.186277] [INFO] Add sql statement to copy current active plugin setting to temp table: insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+[2022-02-10 19:50:47.186617] [DEBUG] Retrieving new masterdata from target
+[2022-02-10 19:50:47.186775] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-10 19:50:47.527062] [DEBUG] Retrieving new masterdata completed
+[2022-02-10 19:50:47.531816] [DEBUG] Add drop table in database on wp_actionscheduler_actions and rename from wpsyntmp_62056c75956d2
+[2022-02-10 19:50:47.531972] [DEBUG] Add drop table in database on wp_actionscheduler_claims and rename from wpsyntmp_62056c7595732
+[2022-02-10 19:50:47.532039] [DEBUG] Add drop table in database on wp_actionscheduler_groups and rename from wpsyntmp_62056c759573c
+[2022-02-10 19:50:47.532100] [DEBUG] Add drop table in database on wp_actionscheduler_logs and rename from wpsyntmp_62056c7595744
+[2022-02-10 19:50:47.532155] [DEBUG] Add drop table in database on wp_aioseo_cache and rename from wpsyntmp_62056c759574e
+[2022-02-10 19:50:47.532207] [DEBUG] Add drop table in database on wp_aioseo_notifications and rename from wpsyntmp_62056c7595757
+[2022-02-10 19:50:47.532280] [DEBUG] Add drop table in database on wp_aioseo_posts and rename from wpsyntmp_62056c7595765
+[2022-02-10 19:50:47.532334] [DEBUG] Add drop table in database on wp_commentmeta and rename from wpsyntmp_62056c759577d
+[2022-02-10 19:50:47.532387] [DEBUG] Add drop table in database on wp_comments and rename from wpsyntmp_62056c7595785
+[2022-02-10 19:50:47.532437] [DEBUG] Add drop table in database on wp_links and rename from wpsyntmp_62056c7595793
+[2022-02-10 19:50:47.532488] [DEBUG] Add drop table in database on wp_options and rename from wpsyntmp_62056c759579d
+[2022-02-10 19:50:47.532538] [DEBUG] Add drop table in database on wp_postmeta and rename from wpsyntmp_62056c75957a7
+[2022-02-10 19:50:47.532591] [DEBUG] Add drop table in database on wp_posts and rename from wpsyntmp_62056c75957af
+[2022-02-10 19:50:47.532685] [DEBUG] Add drop table in database on wp_term_relationships and rename from wpsyntmp_62056c75957bf
+[2022-02-10 19:50:47.532768] [DEBUG] Add drop table in database on wp_term_taxonomy and rename from wpsyntmp_62056c75957c7
+[2022-02-10 19:50:47.532856] [DEBUG] Add drop table in database on wp_termmeta and rename from wpsyntmp_62056c75957d0
+[2022-02-10 19:50:47.532934] [DEBUG] Add drop table in database on wp_terms and rename from wpsyntmp_62056c75957d8
+[2022-02-10 19:50:47.533008] [DEBUG] Add drop table in database on wp_usermeta and rename from wpsyntmp_62056c75957e0
+[2022-02-10 19:50:47.533070] [DEBUG] Add drop table in database on wp_users and rename from wpsyntmp_62056c75957e8
+[2022-02-10 19:50:47.533162] [DEBUG] Finalize SQL queries:
+
+Array
+(
+    [0] => Array
+        (
+            [0] => drop table if exists `wp_options`
+            [1] => rename table `wpsyntmp_62056c759579d` to `wp_options`
+        )
+
+    [1] => Array
+        (
+            [0] => drop table if exists `wp_usermeta`
+            [1] => rename table `wpsyntmp_62056c75957e0` to `wp_usermeta`
+        )
+
+    [2] => Array
+        (
+            [0] => drop table if exists `wp_users`
+            [1] => rename table `wpsyntmp_62056c75957e8` to `wp_users`
+        )
+
+    [3] => Array
+        (
+            [0] => drop table if exists `wp_terms`
+            [1] => rename table `wpsyntmp_62056c75957d8` to `wp_terms`
+        )
+
+    [4] => Array
+        (
+            [0] => drop table if exists `wp_termmeta`
+            [1] => rename table `wpsyntmp_62056c75957d0` to `wp_termmeta`
+        )
+
+    [5] => Array
+        (
+            [0] => drop table if exists `wp_term_taxonomy`
+            [1] => rename table `wpsyntmp_62056c75957c7` to `wp_term_taxonomy`
+        )
+
+    [6] => Array
+        (
+            [0] => drop table if exists `wp_term_relationships`
+            [1] => rename table `wpsyntmp_62056c75957bf` to `wp_term_relationships`
+        )
+
+    [7] => Array
+        (
+            [0] => drop table if exists `wp_posts`
+            [1] => rename table `wpsyntmp_62056c75957af` to `wp_posts`
+        )
+
+    [8] => Array
+        (
+            [0] => drop table if exists `wp_postmeta`
+            [1] => rename table `wpsyntmp_62056c75957a7` to `wp_postmeta`
+        )
+
+    [9] => Array
+        (
+            [0] => drop table if exists `wp_links`
+            [1] => rename table `wpsyntmp_62056c7595793` to `wp_links`
+        )
+
+    [10] => Array
+        (
+            [0] => drop table if exists `wp_comments`
+            [1] => rename table `wpsyntmp_62056c7595785` to `wp_comments`
+        )
+
+    [11] => Array
+        (
+            [0] => drop table if exists `wp_commentmeta`
+            [1] => rename table `wpsyntmp_62056c759577d` to `wp_commentmeta`
+        )
+
+    [12] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_posts`
+            [1] => rename table `wpsyntmp_62056c7595765` to `wp_aioseo_posts`
+        )
+
+    [13] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_notifications`
+            [1] => rename table `wpsyntmp_62056c7595757` to `wp_aioseo_notifications`
+        )
+
+    [14] => Array
+        (
+            [0] => drop table if exists `wp_aioseo_cache`
+            [1] => rename table `wpsyntmp_62056c759574e` to `wp_aioseo_cache`
+        )
+
+    [15] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_logs`
+            [1] => rename table `wpsyntmp_62056c7595744` to `wp_actionscheduler_logs`
+        )
+
+    [16] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_groups`
+            [1] => rename table `wpsyntmp_62056c759573c` to `wp_actionscheduler_groups`
+        )
+
+    [17] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_claims`
+            [1] => rename table `wpsyntmp_62056c7595732` to `wp_actionscheduler_claims`
+        )
+
+    [18] => Array
+        (
+            [0] => drop table if exists `wp_actionscheduler_actions`
+            [1] => rename table `wpsyntmp_62056c75956d2` to `wp_actionscheduler_actions`
+        )
+
+    [19] => Array
+        (
+            [0] => delete from `wpsyntmp_62056c759579d`  where option_name like 'wpsynchro_%'
+            [1] => insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+            [2] => delete from `wpsyntmp_62056c759579d`  where option_name = 'active_plugins'
+            [3] => insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+        )
+
+)
+
+[2022-02-10 19:50:47.533293] [INFO] Done preparing SQL queries for database finalize
+[2022-02-10 19:50:47.541157] [INFO] Ending sync controller loop - with remaining time: 26.46262383461
+[2022-02-10 19:50:47.722463] [INFO] Running sync controller loop - With allotted time: 26.826566934586 seconds
+[2022-02-10 19:50:47.724438] [INFO] Starting finalize - Remaining time: 26.824581861496
+[2022-02-10 19:50:47.726007] [INFO] Starting database finalize with remaining time: 26.823051929474
+[2022-02-10 19:50:47.726448] [DEBUG] Calling remote client db service with 4 SQL statements:
+
+Array
+(
+    [0] => delete from `wpsyntmp_62056c759579d`  where option_name like 'wpsynchro_%'
+    [1] => insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+    [2] => delete from `wpsyntmp_62056c759579d`  where option_name = 'active_plugins'
+    [3] => insert into `wpsyntmp_62056c759579d` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+)
+
+[2022-02-10 19:50:48.014118] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:48.019791] [INFO] Ending sync controller loop - with remaining time: 26.529231786728
+[2022-02-10 19:50:48.204472] [INFO] Running sync controller loop - With allotted time: 26.826673030853 seconds
+[2022-02-10 19:50:48.205855] [INFO] Starting finalize - Remaining time: 26.825282812119
+[2022-02-10 19:50:48.207916] [INFO] Starting database finalize with remaining time: 26.823220968246
+[2022-02-10 19:50:48.208137] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_actions`
+    [1] => rename table `wpsyntmp_62056c75956d2` to `wp_actionscheduler_actions`
+)
+
+[2022-02-10 19:50:48.544268] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:48.555287] [INFO] Ending sync controller loop - with remaining time: 26.475857019424
+[2022-02-10 19:50:48.743823] [INFO] Running sync controller loop - With allotted time: 26.821462154388 seconds
+[2022-02-10 19:50:48.744658] [INFO] Starting finalize - Remaining time: 26.820619106293
+[2022-02-10 19:50:48.745398] [INFO] Starting database finalize with remaining time: 26.819878101349
+[2022-02-10 19:50:48.745503] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_claims`
+    [1] => rename table `wpsyntmp_62056c7595732` to `wp_actionscheduler_claims`
+)
+
+[2022-02-10 19:50:49.102509] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:49.111868] [INFO] Ending sync controller loop - with remaining time: 26.453415155411
+[2022-02-10 19:50:49.294016] [INFO] Running sync controller loop - With allotted time: 26.826117992401 seconds
+[2022-02-10 19:50:49.294924] [INFO] Starting finalize - Remaining time: 26.825201034546
+[2022-02-10 19:50:49.295693] [INFO] Starting database finalize with remaining time: 26.824430942535
+[2022-02-10 19:50:49.295815] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_groups`
+    [1] => rename table `wpsyntmp_62056c759573c` to `wp_actionscheduler_groups`
+)
+
+[2022-02-10 19:50:50.263197] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:50.271739] [INFO] Ending sync controller loop - with remaining time: 25.848411083221
+[2022-02-10 19:50:50.458033] [INFO] Running sync controller loop - With allotted time: 26.824848890305 seconds
+[2022-02-10 19:50:50.459798] [INFO] Starting finalize - Remaining time: 26.823109865189
+[2022-02-10 19:50:50.460836] [INFO] Starting database finalize with remaining time: 26.822036981583
+[2022-02-10 19:50:50.460951] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_actionscheduler_logs`
+    [1] => rename table `wpsyntmp_62056c7595744` to `wp_actionscheduler_logs`
+)
+
+[2022-02-10 19:50:50.780355] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:50.789055] [INFO] Ending sync controller loop - with remaining time: 26.49382686615
+[2022-02-10 19:50:50.972614] [INFO] Running sync controller loop - With allotted time: 26.82669711113 seconds
+[2022-02-10 19:50:50.975384] [INFO] Starting finalize - Remaining time: 26.823930978775
+[2022-02-10 19:50:50.976965] [INFO] Starting database finalize with remaining time: 26.822331190109
+[2022-02-10 19:50:50.977128] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_cache`
+    [1] => rename table `wpsyntmp_62056c759574e` to `wp_aioseo_cache`
+)
+
+[2022-02-10 19:50:51.462537] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:51.472281] [INFO] Ending sync controller loop - with remaining time: 26.327021121979
+[2022-02-10 19:50:51.654697] [INFO] Running sync controller loop - With allotted time: 26.82924413681 seconds
+[2022-02-10 19:50:51.655847] [INFO] Starting finalize - Remaining time: 26.828086137772
+[2022-02-10 19:50:51.657890] [INFO] Starting database finalize with remaining time: 26.826041936874
+[2022-02-10 19:50:51.658169] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_notifications`
+    [1] => rename table `wpsyntmp_62056c7595757` to `wp_aioseo_notifications`
+)
+
+[2022-02-10 19:50:51.961446] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:51.971201] [INFO] Ending sync controller loop - with remaining time: 26.51273393631
+[2022-02-10 19:50:52.162589] [INFO] Running sync controller loop - With allotted time: 26.819138050079 seconds
+[2022-02-10 19:50:52.163544] [INFO] Starting finalize - Remaining time: 26.818174123764
+[2022-02-10 19:50:52.164284] [INFO] Starting database finalize with remaining time: 26.81743311882
+[2022-02-10 19:50:52.164392] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_aioseo_posts`
+    [1] => rename table `wpsyntmp_62056c7595765` to `wp_aioseo_posts`
+)
+
+[2022-02-10 19:50:52.445365] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:52.454312] [INFO] Ending sync controller loop - with remaining time: 26.527410030365
+[2022-02-10 19:50:52.636316] [INFO] Running sync controller loop - With allotted time: 26.828949928284 seconds
+[2022-02-10 19:50:52.637072] [INFO] Starting finalize - Remaining time: 26.828186035156
+[2022-02-10 19:50:52.637777] [INFO] Starting database finalize with remaining time: 26.827496051788
+[2022-02-10 19:50:52.637893] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_commentmeta`
+    [1] => rename table `wpsyntmp_62056c759577d` to `wp_commentmeta`
+)
+
+[2022-02-10 19:50:52.946288] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:52.957746] [INFO] Ending sync controller loop - with remaining time: 26.507525920868
+[2022-02-10 19:50:53.145937] [INFO] Running sync controller loop - With allotted time: 26.819479942322 seconds
+[2022-02-10 19:50:53.146963] [INFO] Starting finalize - Remaining time: 26.818443775177
+[2022-02-10 19:50:53.147644] [INFO] Starting database finalize with remaining time: 26.817761898041
+[2022-02-10 19:50:53.147740] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_comments`
+    [1] => rename table `wpsyntmp_62056c7595785` to `wp_comments`
+)
+
+[2022-02-10 19:50:53.467037] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:53.477266] [INFO] Ending sync controller loop - with remaining time: 26.488145828247
+[2022-02-10 19:50:53.660592] [INFO] Running sync controller loop - With allotted time: 26.824065923691 seconds
+[2022-02-10 19:50:53.661527] [INFO] Starting finalize - Remaining time: 26.823119878769
+[2022-02-10 19:50:53.662277] [INFO] Starting database finalize with remaining time: 26.822369098663
+[2022-02-10 19:50:53.662382] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_links`
+    [1] => rename table `wpsyntmp_62056c7595793` to `wp_links`
+)
+
+[2022-02-10 19:50:53.978152] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:53.987199] [INFO] Ending sync controller loop - with remaining time: 26.497453927994
+[2022-02-10 19:50:54.185626] [INFO] Running sync controller loop - With allotted time: 26.811718940735 seconds
+[2022-02-10 19:50:54.186492] [INFO] Starting finalize - Remaining time: 26.810846090317
+[2022-02-10 19:50:54.187347] [INFO] Starting database finalize with remaining time: 26.809990167618
+[2022-02-10 19:50:54.187463] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_postmeta`
+    [1] => rename table `wpsyntmp_62056c75957a7` to `wp_postmeta`
+)
+
+[2022-02-10 19:50:54.518707] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:54.529366] [INFO] Ending sync controller loop - with remaining time: 26.467978000641
+[2022-02-10 19:50:54.719377] [INFO] Running sync controller loop - With allotted time: 26.815701007843 seconds
+[2022-02-10 19:50:54.720311] [INFO] Starting finalize - Remaining time: 26.81475687027
+[2022-02-10 19:50:54.720987] [INFO] Starting database finalize with remaining time: 26.814079999924
+[2022-02-10 19:50:54.721130] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_posts`
+    [1] => rename table `wpsyntmp_62056c75957af` to `wp_posts`
+)
+
+[2022-02-10 19:50:55.015482] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:55.024552] [INFO] Ending sync controller loop - with remaining time: 26.51052904129
+[2022-02-10 19:50:55.220659] [INFO] Running sync controller loop - With allotted time: 26.814862966537 seconds
+[2022-02-10 19:50:55.221634] [INFO] Starting finalize - Remaining time: 26.813898086548
+[2022-02-10 19:50:55.222707] [INFO] Starting database finalize with remaining time: 26.812808990479
+[2022-02-10 19:50:55.222893] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_term_relationships`
+    [1] => rename table `wpsyntmp_62056c75957bf` to `wp_term_relationships`
+)
+
+[2022-02-10 19:50:55.529785] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:55.539367] [INFO] Ending sync controller loop - with remaining time: 26.496160984039
+[2022-02-10 19:50:55.757945] [INFO] Running sync controller loop - With allotted time: 26.793209075928 seconds
+[2022-02-10 19:50:55.759637] [INFO] Starting finalize - Remaining time: 26.791516065598
+[2022-02-10 19:50:55.760729] [INFO] Starting database finalize with remaining time: 26.790406942368
+[2022-02-10 19:50:55.760873] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_term_taxonomy`
+    [1] => rename table `wpsyntmp_62056c75957c7` to `wp_term_taxonomy`
+)
+
+[2022-02-10 19:50:56.045452] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:56.054232] [INFO] Ending sync controller loop - with remaining time: 26.496911048889
+[2022-02-10 19:50:56.253572] [INFO] Running sync controller loop - With allotted time: 26.813564062119 seconds
+[2022-02-10 19:50:56.254498] [INFO] Starting finalize - Remaining time: 26.812634944916
+[2022-02-10 19:50:56.255502] [INFO] Starting database finalize with remaining time: 26.811630010605
+[2022-02-10 19:50:56.255874] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_termmeta`
+    [1] => rename table `wpsyntmp_62056c75957d0` to `wp_termmeta`
+)
+
+[2022-02-10 19:50:56.564879] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:56.574474] [INFO] Ending sync controller loop - with remaining time: 26.492666959763
+[2022-02-10 19:50:56.752463] [INFO] Running sync controller loop - With allotted time: 26.830207109451 seconds
+[2022-02-10 19:50:56.753231] [INFO] Starting finalize - Remaining time: 26.829431056976
+[2022-02-10 19:50:56.753882] [INFO] Starting database finalize with remaining time: 26.828779935837
+[2022-02-10 19:50:56.753974] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_terms`
+    [1] => rename table `wpsyntmp_62056c75957d8` to `wp_terms`
+)
+
+[2022-02-10 19:50:57.091497] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:57.105781] [INFO] Ending sync controller loop - with remaining time: 26.476960897446
+[2022-02-10 19:50:57.292027] [INFO] Running sync controller loop - With allotted time: 26.823876142502 seconds
+[2022-02-10 19:50:57.293050] [INFO] Starting finalize - Remaining time: 26.822844028473
+[2022-02-10 19:50:57.294251] [INFO] Starting database finalize with remaining time: 26.821646213531
+[2022-02-10 19:50:57.294456] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_users`
+    [1] => rename table `wpsyntmp_62056c75957e8` to `wp_users`
+)
+
+[2022-02-10 19:50:57.576181] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:57.586159] [INFO] Ending sync controller loop - with remaining time: 26.529742002487
+[2022-02-10 19:50:57.752978] [INFO] Running sync controller loop - With allotted time: 26.842496156693 seconds
+[2022-02-10 19:50:57.753803] [INFO] Starting finalize - Remaining time: 26.841662168503
+[2022-02-10 19:50:57.754462] [INFO] Starting database finalize with remaining time: 26.84100317955
+[2022-02-10 19:50:57.754601] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_usermeta`
+    [1] => rename table `wpsyntmp_62056c75957e0` to `wp_usermeta`
+)
+
+[2022-02-10 19:50:58.054759] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:58.064772] [INFO] Ending sync controller loop - with remaining time: 26.530712127686
+[2022-02-10 19:50:58.272264] [INFO] Running sync controller loop - With allotted time: 26.806591033936 seconds
+[2022-02-10 19:50:58.274705] [INFO] Starting finalize - Remaining time: 26.804137945175
+[2022-02-10 19:50:58.276380] [INFO] Starting database finalize with remaining time: 26.802461147308
+[2022-02-10 19:50:58.276681] [DEBUG] Calling remote client db service with 2 SQL statements:
+
+Array
+(
+    [0] => drop table if exists `wp_options`
+    [1] => rename table `wpsyntmp_62056c759579d` to `wp_options`
+)
+
+[2022-02-10 19:50:58.580560] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 238
+[2022-02-10 19:50:58.616977] [INFO] Ending sync controller loop - with remaining time: 26.461869955063
+[2022-02-10 19:50:58.829816] [INFO] Running sync controller loop - With allotted time: 26.805685043335 seconds
+[2022-02-10 19:50:58.830603] [INFO] Starting finalize - Remaining time: 26.804890871048
+[2022-02-10 19:50:58.831295] [INFO] Starting database finalize with remaining time: 26.804197072983
+[2022-02-10 19:50:58.831656] [DEBUG] Retrieving new masterdata from target
+[2022-02-10 19:50:58.831824] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-10 19:50:59.533635] [DEBUG] Retrieving new masterdata completed
+[2022-02-10 19:50:59.534080] [DEBUG] No excess temp tables to delete
+[2022-02-10 19:50:59.550655] [INFO] Ending sync controller loop - with remaining time: 26.084852933884
+[2022-02-10 19:50:59.757464] [INFO] Running sync controller loop - With allotted time: 26.810060977936 seconds
+[2022-02-10 19:50:59.759340] [INFO] Starting finalize - Remaining time: 26.808143138885
+[2022-02-10 19:50:59.760557] [INFO] Starting database finalize with remaining time: 26.806887149811
+[2022-02-10 19:50:59.760971] [DEBUG] Retrieving new masterdata from target
+[2022-02-10 19:50:59.761187] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-02-10 19:51:00.053185] [DEBUG] Retrieving new masterdata completed
+[2022-02-10 19:51:00.072040] [INFO] Ending sync controller loop - with remaining time: 26.495418071747
+[2022-02-10 19:51:00.293833] [INFO] Running sync controller loop - With allotted time: 26.795573949814 seconds
+[2022-02-10 19:51:00.294712] [INFO] Starting finalize - Remaining time: 26.794688940048
+[2022-02-10 19:51:00.294849] [INFO] Completed finalize - remaining time: 26.794549942017
+[2022-02-10 19:51:00.294956] [INFO] Execute last actions on target - remaining time: 26.794444084167
+[2022-02-10 19:51:00.587252] [INFO] Completed last actions on target - remaining time: 26.502158164978
+[2022-02-10 19:51:00.627513] [INFO] Ending sync controller loop - with remaining time: 26.461893081665

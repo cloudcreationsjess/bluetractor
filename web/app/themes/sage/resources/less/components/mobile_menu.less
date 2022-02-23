@@ -1,0 +1,185 @@
+// MOBILE MENU
+.mobile-popout {
+  backdrop-filter: blur(11px);
+
+  .lg({
+    position: fixed;
+    width: 100%;
+    padding: @header-height + 60px 30px 30px;
+    bottom: 0px;
+    left: 0;
+    transform: translateX(0) translateZ(0);
+    //text-align: center;
+    background-color: fade(@text-color-primary, 80%);
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    height: 100vh;
+    overflow: auto;
+    z-index: 997;
+    color: @white;
+
+    .is--mobile-nav__active & {
+      visibility: visible;
+      opacity: 1;
+    }
+  });
+
+
+
+}
+
+.mobile-menu {
+
+  .mobile-menu__site-menu {
+    transition: @easing;
+
+    /* Main Menus / Upper-most Menu Links */
+
+    #mobile-menu {
+      display: block;
+      position: relative;
+      list-style-type: none;
+      text-align: left;
+      
+
+      a {
+        .transition();
+        position: relative;
+        left: 0px;
+        color: @white;
+        font-family: @font-bold;
+
+        &:hover {
+          color: @accent-color;
+        }
+      }
+
+      .current_page_item > a {
+        color: @accent-color !important;
+        border-bottom: 2px solid @accent-color;
+        margin-top: -2px !important;
+        padding-top: 3px;
+        line-height: 37px;
+
+      }
+
+      // Button added to nav item that shows sub menu when clicked
+      .nav-sub-menu-button {
+        font-size: 16px;
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        color: @primary-color;
+        transition: all 200ms ease-in-out;
+        transform: rotate(0deg);
+        background: transparent;
+        border: none;
+        border-radius: 15px;
+        padding-top: 2px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        .transition();
+
+        .fas {
+          transition: all 200ms ease-in-out;
+        }
+
+        &.nav-sub-menu-button--open .fas {
+          transform: rotate(180deg);
+        }
+
+        &:hover {
+          background: @secondary-color-light;
+          border-color: @secondary-color-light;
+          color: @white;
+        }
+      }
+
+      .nav-sub-menu-button--visible > ul.sub-menu {
+        display: block !important;
+        visibility: visible !important;
+        height: auto !important;
+      }
+
+      /* Set list to inline-block for horizontal menu */
+
+      & > li {
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+        position: relative;
+
+        & > a {
+          letter-spacing: 0px;
+          color: @white;
+          .font-size(18);
+          line-height: 1.5;
+          margin-bottom: 20px;
+          font-family: @font-bold;
+          display: inline-block;
+
+          &:hover {
+            color: @accent-color;
+          }
+        }
+
+        /**** SUB MENU ****/
+
+        ul {
+          display: none;
+          position: relative;
+          width: auto;
+          line-height: 20px;
+          margin-top: 0px;
+          padding-left: 20px;
+          color: @primary-color;
+          background: transparent;
+          text-align: left;
+          list-style-type: none;
+
+          li {
+
+            a {
+              letter-spacing: 0px;
+              color: @primary-color;
+              .font-size(14);
+              line-height: 1.5;
+              margin-bottom: 20px;
+              font-family: @font-text;
+              font-weight: @weight-bold;
+              text-transform: uppercase;
+              display: inline-block;
+
+              &:hover {
+                color: @secondary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .social-list {
+      text-align: center;
+      margin-top: @baseline*2;
+
+      .social-item {
+        display: inline-block;
+
+        a, a:visited {
+          color: @text-color-light;
+          .font-size(16);
+          .transition();
+          min-width: 40px;
+        }
+
+        a:hover, a:focus {
+          color: @primary-color
+        }
+      }
+    }
+  }
+}

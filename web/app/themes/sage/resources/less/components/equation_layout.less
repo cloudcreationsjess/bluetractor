@@ -1,0 +1,133 @@
+.equation_layout {
+  .full-width();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: calc(@baseline * 6 + 6.7vw);
+  padding-bottom: @bl*6;
+  position: relative;
+  overflow: hidden;
+
+
+  .equation_layout__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: top right;
+
+    .sm({
+      display: none;
+    });
+  }
+
+  .equation_layout__bg--mobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    object-position: top center;
+    display:none;
+    .sm({
+      display: block;
+    });
+  }
+
+  .equation-list {
+    .full-width();
+    .flex-row();
+    align-items: flex-start;
+
+    .sm({
+      flex-wrap: wrap;
+      justify-content: center;
+    });
+
+    .xs({
+      justify-content: space-between;
+    });
+
+    .equation-list__item {
+      .flex-column(flex-start);
+      align-items: center;
+      text-align: center;
+      width: 140px;
+
+      .sm({
+        width: 60px;
+      });
+
+      .xs({
+        width: 50px;
+      });
+
+      &:not(:last-of-type) {
+        margin-right: @bl*0.5;
+
+        .xs({
+          margin-right: 0;
+        });
+      }
+
+      .equation-list__item__icon {
+        width: @bl*3;
+        height: @bl*3;
+        margin-bottom: 15px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center center;
+        }
+      }
+
+      p {
+        color: @white;
+        line-height: 1.2;
+        font-family: @font-bold;
+      }
+
+      &.equation-list__item--is-symbol {
+        .equation-list__item__icon {
+          margin-top: @bl;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &.equation-list__item--is_mobile_full_width {
+
+        .sm({
+          width: 100%;
+          display: block;
+          margin-right: 0px!important;
+
+          .equation-list__item__icon {
+            margin-left: auto;
+            margin-right: auto;
+
+          }
+
+          &.equation-list__item--is-symbol {
+            margin-bottom: @bl*2;
+          }
+
+          p {
+            width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        });
+      }
+    }
+  }
+}

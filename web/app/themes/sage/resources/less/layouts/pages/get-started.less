@@ -1,0 +1,148 @@
+// GET STARTED PAGE *****************
+
+.page-id-18 {
+
+  .splash:after {
+    height: 90vh;
+  }
+
+  h1 {
+    .font-size(50);
+    margin-bottom: @bl*18;
+
+    .sm({
+      .font-size(40);
+    });
+
+    .xs({
+      .font-size(24);
+      line-height: 1.25;
+    });
+
+  }
+
+  .splash-content {
+    max-width: 1180px;
+  }
+
+  .get-started__second-section-title {
+    max-width: 500px;
+
+    .lg({
+      .font-size(36);
+    });
+
+    .md({
+      max-width: unset;
+      margin-bottom: @bl*4;
+    });
+
+    .xs({
+      .font-size(20);
+      line-height: 1.2;
+    });
+  }
+
+  .two_column {
+
+    .special-col {
+      max-width: calc(50% - 60px);
+
+      .md({
+        flex: 0 0 100%;
+        max-width: unset;
+      });
+    }
+  }
+
+  .ordered-list {
+    h5 {
+      .xs({
+        .font-size(18);
+        line-height: 1.3;
+      });
+    }
+
+    .ordered-list__icon {
+
+      .xs({
+        margin-top: 10px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+      });
+    }
+
+    .ordered-list__item:not(:last-of-type) {
+      .xs({
+        margin-bottom: @bl*2.5;
+      });
+    }
+  }
+
+  .bottom_section {
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+
+    .lg({
+      background-position: center;
+    });
+
+    .xs({
+      padding: 130px 0;
+      background-position: left;
+    });
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 40vh;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      background: rgb(36, 53, 69);
+      background: linear-gradient(180deg, rgba(36, 53, 69, 1) 0%, rgba(36, 53, 69, 0) 100%);
+      z-index: 0;
+    }
+
+    h5 {
+      color: @text-color-light;
+      margin-bottom: @bl*2;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+
+      &:last-of-type {
+        margin-bottom: @bl*3;
+      }
+
+      .md({
+        margin-bottom: @bl*1.5;
+      });
+    }
+
+    .bottom_section__button-container {
+      .flex-column();
+
+      a {
+        margin-bottom: @bl*2;
+        margin-left: 0;
+
+        .md({
+          margin-bottom: @bl*1.5;
+        });
+      }
+
+      p {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,228 @@
+/***********************************************************************/
+/* TYPOGRAPHY
+/***********************************************************************/
+
+/********** Text Select Color ******************************************/
+::selection, ::-moz-selection {
+  color: @white;
+  background: @primary-color; /* WebKit/Blink Browsers */
+}
+
+body {
+  font-family: @font-text;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  color: @text-color-primary;
+}
+
+/***********************************************************************/
+/********** Headings ***************************************************/
+/***********************************************************************/
+.title, .heading {
+  font-family: @font-heading;
+}
+
+h1, .h1 {
+  .font-size(60);
+  line-height: 1.2;
+  font-family: @font-heading;
+  color: @primary-color;
+  margin-bottom: @baseline;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+
+  .lg({
+    .font-size(54);
+  });
+
+  .md({
+    .font-size(50);
+  });
+
+  .sm({
+    .font-size(40);
+  });
+
+  .xs({
+    .font-size(24);
+    line-height: 1.25;
+  });
+
+}
+
+h2, .h2 {
+  .font-size(40);
+  line-height: 1.2;
+  font-family: @font-heading;
+  color: @primary-color;
+  margin-bottom: @baseline;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+
+  .lg({
+    .font-size(36);
+  });
+
+  .sm({
+    .font-size(32);
+  });
+
+  .xs({
+    .font-size(20);
+    line-height: 1.2;
+  });
+}
+
+h3, .h3 {
+  .font-size(30);
+  line-height: 1.2;
+  font-family: @font-heading;
+  color: @primary-color;
+  margin-bottom: @baseline;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+
+  .xs({
+    .font-size(18);
+  });
+}
+
+h4, .h4 {
+  .font-size(28);
+  line-height: 1;
+  font-family: @font-heading;
+  color: @text-color-primary;
+  margin-bottom: @bl*0.5;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+
+  .xs({
+    .font-size(20);
+  });
+}
+
+h5, .h5 {
+  .font-size(20);
+  line-height: 1.8;
+  font-family: @font-text;
+  color: @text-color-primary;
+  margin-bottom: 0;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+  font-weight: bold;
+  .xs({
+    .font-size(14);
+    line-height: 1.4;
+  });
+}
+
+h6, .h6 {
+  .font-size(18);
+  line-height: 1;
+  font-family: @font-text;
+  color: @text-color-primary;
+  margin-bottom: @bl*0.5;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+}
+
+/***********************************************************************/
+/*********** Paragraphs and Text Effects *******************************/
+/***********************************************************************/
+p, .p {
+  .font-size(16);
+  line-height: 1.8;
+  font-family: @font-text;
+  color: @text-color-primary;
+  margin-bottom: @baseline;
+  letter-spacing: 0px;
+  text-transform: none;
+  margin-top: 0;
+
+  .xs({
+    .font-size(14);
+    line-height: 1.4;
+  });
+}
+
+i, em {
+
+}
+
+b, strong {
+
+}
+
+small {
+
+}
+
+sup, sub {
+
+}
+
+/***********************************************************************/
+/*********** Links *****************************************************/
+/***********************************************************************/
+a, a:visited {
+  color: @link-color;
+  text-decoration: none;
+  outline: none;
+  .transition();
+}
+
+a:hover, a:focus, a:active {
+  color: @link-hover-color;
+  text-decoration: none;
+  outline: none;
+}
+
+/***********************************************************************/
+/********** Lines & Boxes **********************************************/
+/***********************************************************************/
+hr {
+  height: 0px;
+  margin: @baseline*3 0px;
+  border: none;
+  border-bottom: 2px solid @secondary-color;
+}
+
+/***********************************************************************/
+/********** Default Blockquote Styles **********************************/
+/***********************************************************************/
+blockquote {
+
+  p {
+
+  }
+
+  cite {
+
+    &::before {
+
+    }
+  }
+}
+
+/***********************************************************************/
+/****** LISTS **********************************************************/
+/***********************************************************************/
+ol, ul {
+  list-style-type: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+main {
+  ol, ul {
+    list-style-position: inside;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,127 @@
+.swiper-2 {
+  width: 100%;
+  height: 100%;
+  padding: 0 70px;
+  position: relative;
+
+  .md({
+    padding: 0 50px;
+  });
+
+  .sm({
+    padding: 0;
+  });
+
+  .swiper-wrapper {
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+
+  }
+
+  .swiper-slide {
+    min-height: 402px;
+    background-color: #192B39;
+    padding: 75px 100px;
+    .flex-column(center);
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+
+    .xxl({
+      min-height: 490px;
+    });
+
+    .xl({
+      min-height: 490px;
+    });
+
+    .lg({
+      padding: 65px 70px;
+      min-height: 616px;
+    });
+
+    .md({
+      min-height: 616px;
+    });
+
+    .sm({
+
+      min-height: 616px;
+      padding: 50px 50px;
+    });
+
+    .xs({
+      min-height: 563px;;
+      border-radius: 10px;
+      padding: 40px 30px;
+    });
+
+    .swiper-slide__quote {
+      margin-bottom: @bl;
+
+      p {
+        color: @white;
+      }
+    }
+
+    .swiper-slide__people {
+      .flex-column();
+      color: @teal;
+      margin-bottom: 10px;
+
+      .xs({
+        .font-size(14);
+      });
+
+      .swiper-slide__person {
+        .flex-row();
+        margin-bottom: 5px;
+
+        .md({
+          .flex-column();
+        });
+
+        .swiper-slide__person--name {
+          margin-right: 5px;
+
+          .lg({
+            margin-right: 0;
+          });
+        }
+      }
+
+    }
+    .swiper-slide__company {
+      color: @orange;
+      font-weight: bold;
+
+      .xs({
+        .font-size(14);
+      });
+
+    }
+
+  }
+
+  .swiper-pagination {
+    bottom: -20px;
+
+    .swiper-pagination-bullet-active {
+      background-color: @teal;
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: @teal;
+    height: 30px;
+    width: auto;
+
+  }
+
+  .swiper-button-prev- {
+
+  }
+
+}

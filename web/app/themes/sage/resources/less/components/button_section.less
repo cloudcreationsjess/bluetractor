@@ -1,0 +1,28 @@
+.button_section {
+  .section-padding();
+  padding-left: 30px;
+  padding-top: 0;
+
+  .md({
+    padding-left: 30px;
+    padding-top: 0;
+  });
+
+  .xs ({
+    padding-left: 15px;
+  });
+
+  a {
+    line-height: 1;
+    padding: 31px 40px;
+
+    .xs({
+      padding: 14px 40px;
+    });
+
+    &:hover {
+      color: @text-color-primary!important;
+      background: @orange!important;
+    }
+  }
+}

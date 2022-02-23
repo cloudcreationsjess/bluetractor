@@ -1,0 +1,14 @@
+[2022-01-28 23:03:48.954528] [INFO] Running sync controller loop - With allotted time: 26.758971214294 seconds
+[2022-01-28 23:03:48.956387] [INFO] Initating with remote and local host with remaining time:26.757107019424
+[2022-01-28 23:03:48.961864] [DEBUG] Calling initate remote service with url: http://bluetractor.test
+[2022-01-28 23:03:49.223006] [DEBUG] Got initiate token: 61d31705a14dc5f464cee416757d8b6a09abb0a7cd5d8c7f60aa04f84fbc1aef
+[2022-01-28 23:03:49.223191] [DEBUG] Calling initate remote service with url: https://bluetractor.stealthmedia.com
+[2022-01-28 23:03:49.746906] [DEBUG] Got initiate token: 6d59f0ffdf528945e33596c992938a7a97e64fdf9254ef117f54b7f16c9a9e47
+[2022-01-28 23:03:49.751328] [INFO] Initation completed on: 0.79583311080933 seconds
+[2022-01-28 23:03:49.754244] [INFO] Ending sync controller loop - with remaining time: 25.959255218506
+[2022-01-28 23:03:50.000256] [INFO] Running sync controller loop - With allotted time: 26.763729095459 seconds
+[2022-01-28 23:03:50.003017] [INFO] Getting masterdata from source and target with remaining time:26.76096200943
+[2022-01-28 23:03:50.005315] [DEBUG] Calling masterdata service on: http://bluetractor.test with intent to user as 'from'
+[2022-01-28 23:03:50.371981] [DEBUG] Calling masterdata service on: https://bluetractor.stealthmedia.com with intent to user as 'to'
+[2022-01-28 23:03:50.976629] [INFO] Completed masterdata on: 0.97362494468689 seconds
+[2022-01-28 23:03:50.989994] [INFO] Ending sync controller loop - with remaining time: 25.773980140686

@@ -1,0 +1,50 @@
+.ordered-list {
+
+  .ordered-list__item {
+    .flex-row(flex start);
+    align-items: flex-start;
+
+    &:not(:last-of-type) {
+      margin-bottom: @bl*1.5;
+    }
+
+    .ordered-list__icon {
+      height: 50px;
+      width: 50px;
+      background-color: @secondary-color;
+      border-radius: 50%;
+      color: @text-color-light;
+      font-family: @font-bold;
+      .font-size(20);
+      line-height: 50px;
+      text-align: center;
+      flex-shrink: 0;
+      margin-right: @bl;
+    }
+
+    .ordered-list__content {
+      margin-top: 6px;
+
+      h5 {
+        color: @secondary-color;
+        font-family: @font-bold;
+        margin-bottom: @bl;
+      }
+
+      ol {
+        color: @secondary-color;
+        list-style-type: lower-alpha;
+
+        li {
+          color: @text-color-light;
+          margin-bottom: @bl*0.5;
+          line-height: 1.5;
+
+          &::marker {
+            color: @secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

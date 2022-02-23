@@ -1,0 +1,55 @@
+// Global Styles
+
+body {
+  ::selection {
+    color: @white;
+    background: @orange;
+  }
+}
+.column-video {
+  p {
+    margin-bottom: 0;
+  }
+}
+//Terms of use and privacy policy pages
+
+.page-id-611, .page-id-608 {
+  padding-top: 100px;
+  line-height: 1.2;
+
+  h1 {
+    color: @text-color-primary;
+    text-align: left;
+    margin-bottom: @bl*3;
+    .font-size(30);
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    margin-bottom: 20px;
+
+    li {
+      line-height: 1.8;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+
+    li {
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+  }
+
+  .title_with_two_column {
+    .special-col {
+      .flex-row();
+      max-width: 100%;
+      flex: auto;
+    }
+  }
+}
